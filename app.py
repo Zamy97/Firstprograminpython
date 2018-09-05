@@ -77,9 +77,9 @@ friends.insert(1, "kelly")
 print(friends.index("Fariha"))
 print(friends.count("Fariha"))
 
-##friends.sort()
-##lucky_numbers.sort()
-##lucky_numbers.remove()
+friends.sort()
+lucky_numbers.sort()
+lucky_numbers.remove()
 
 friends2 = friends.copy()
 

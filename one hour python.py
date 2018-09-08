@@ -1,3 +1,7 @@
+import random
+import sys
+import os
+
 #Different types of data types in python.
 #numbers, Strings, lists,Tuples, Dictionaries
 
@@ -151,3 +155,27 @@ for x in range(0,3):
         print(num_list[x][y])
 
 # A bit about while loop
+# They are going to be use when you don't have any idea ahead of time how many times you are going to loop.
+
+
+
+# This will generate a random number from 0-99
+random_number = random.randomrange(0,100)
+
+# What this is doing here is it has a condition to loop through until it hits 15. It's going to continure producing random number until It get's to 15 and as soon as it hits that it'll jump out of the loop.
+while(random_number != 15):
+    print(random_number)
+    random_number = random.randomrange(0,100)
+
+i = 0;
+
+while( i <= 22):
+    if(i%2 == 0):
+        print(i)
+    elif (i == 9):
+        break
+    else:
+        i += 1 # i = i + 1
+        continue
+
+# A bit about functions:

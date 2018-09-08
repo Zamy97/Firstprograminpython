@@ -49,3 +49,33 @@ make_school_Students.insert(1, "pickle")
 
  #To get a length of the list you can do so by;
  print(len(make_school_Students))
+
+# A bit about Tupoles {It's very similar to list}
+# Once you create a tuple you can't change the valuve of it anymore.
+
+aktar = (3,4,5,6,7)
+new_aktar = list(aktar)
+new_list = tuple(new_aktar)
+
+#To get a list of your tuple you can get it by typing
+len(tupple)
+min(tuple)
+max(tuple)
+
+#A bit about Dictionary[you can join dictionaries with list with + sign ]
+
+people_at_mke_scl = {'Dan': 'coach', 'Megan': 'student_service', 'Dani': 'BEW Teacher', 'bruce': 'my bew teacher'}
+
+print(people_at_mke_scl['Dani'])
+
+# To delete an entry inside a dictionary you can do so with the following.
+
+del people_at_mke_scl['Megan']
+
+# To change the value of an entry you can do the following.
+
+people_at_mke_scl['Dan'] = 'Spd teacher'
+
+# To see the number of stuff you have inside your dictionary. Do the following:
+
+print(len(people_at_mke_scl))

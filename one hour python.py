@@ -124,3 +124,30 @@ else:
     print("you don't get anything")
 
 # A bit about looping
+## For loop
+
+for x in range(0, 10):
+    print(x, '', end="")
+
+# To create a new line you can do so by doing the following:
+
+print('\n')
+
+# Use for look to cycle thruough a list:
+
+grocery_list = ['juice', 'Tomatoes', 'Mango', 'Banana', 'chips']
+
+for y in grocery_list:
+    print(y)
+
+# To loop through a cycle using number do the follwoing:
+
+for x in [2,4,6,8,10]:
+    print(x)
+
+num_list = [[1,2,3],[13,45,63,54], [500,700,500,498]]
+for x in range(0,3):
+    for y in range(0,3):
+        print(num_list[x][y])
+
+# A bit about while loop

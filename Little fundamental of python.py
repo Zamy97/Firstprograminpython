@@ -1,5 +1,5 @@
-from math import *
-
+#from math import *
+'''
 Andrea = "She loves singing."
 
 print(Andrea.replace("singing", "Dancing"))
@@ -36,6 +36,8 @@ result = float(first_number) + float(second_number)
 
 print(result)
 
+'''
+#Error handling
 
 
 
@@ -44,17 +46,13 @@ plural_noun = input("Enter a Plural Noun: ")
 celebrity = input("Enter a Celebrity Name: ")
 country = input("Enter a Country Name: ")
 your_name = input("Enter your name: ")
+he/she = input("type")
 
+madlibs_story = your_name +  " is good at " + first_Verb + he/she +  "loves everything about "+ plural_noun + he/she + "  kinda wants to go to " + country + " to meet " + celebrity
 
+print(madlibs_story)
 
-
-
-
-print( your_name +  " is good at " + first_Verb )
-print("She loves everything about " + plural_noun )
-print("She kinda wants to go to " + country + " to meet " + celebrity)
-
-
+'''
 ## List
 
 friends = ["Andrea", "Tamim", "Fariha", "My Mom"]
@@ -215,72 +213,4 @@ def translate(phrase):
 
 print(translate(input("Enter a phrase: ")))
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+'''

@@ -79,3 +79,48 @@ people_at_mke_scl['Dan'] = 'Spd teacher'
 # To see the number of stuff you have inside your dictionary. Do the following:
 
 print(len(people_at_mke_scl))
+
+#Get the value by passing a key from the Dictionary
+
+print(people_at_mke_scl.get('Megan'))
+
+#Get the keys from your dictionary
+
+print(people_at_mke_scl.keys())
+
+#Get the valyes from your dictionary
+
+print(people_at_mke_scl.values())
+
+# A bit about conditionals
+#[if else elif --> are used to form different conditions based of different condition. == --> equal to, != --> not equal to, > --> greater than, >= --> greater than or equal to, < --> less than , or <= --> less than or equal to.
+# If statement is going to excute if a condition is match.
+
+age = 21
+
+if age > 16 :
+    print('You are old enough to drive')
+else:
+    print('you are not old enough to drive')
+
+# bit about elif confdition
+
+if age >= 21 :
+    print('you can drive a truck')
+elif age >= 16:
+    print('you can drive a car')
+else:
+    print('you are not old enough to drive')
+
+# Conbine condition with logical operator. They are [ and or not]
+
+if ((age >= 10) and (age <= 18)):
+    print('you are going to b done with high school')
+elif (age == 19) or (age >= 50):
+    print('you are going to be done with college ')
+elif not(age==30):
+    print('you failed with your life')
+else:
+    print("you don't get anything")
+
+# A bit about looping

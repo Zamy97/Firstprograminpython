@@ -193,4 +193,30 @@ string = addNumber(3,667)
 # This will pring out the first 6 string from the variable.
  long_String = " I'll catch you if you fall"
  print(long_String[0:6])
- 
+
+ #Pring last 5 character
+ print(long_String[-5:])
+
+ #print everything up to the last 5 character
+ print(long_String[:-5])
+
+ # Join two strings together
+ pring(long_String[:4] + "be there")
+
+ # If you want to output a character using your input you can do so with the following.
+ print("%c  is my %s letter and my number %d number is %.5f" % ()'x', 'favorite', 1, .14))
+
+# Capitalize the first letter of a string
+print(long_String.Capitalize())
+
+# Find the index value of the start of a string
+print(long_String.find("fall"))
+
+#True or false of the character that have been entered in a string
+print(long_String.isalpha())
+print(long_String.isalnum())
+print(le(long_String))
+print(long_String.replace("fall", "ground"))
+print(long_String.strip())
+quote_list = long_String.split(" ")
+print(quote_list)

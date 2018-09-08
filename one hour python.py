@@ -179,3 +179,18 @@ while( i <= 22):
         continue
 
 # A bit about functions:
+
+def addNumber(fNum, lNum):
+    sumNum = fNum + lNum
+    return sumNum
+
+string = addNumber(3,667)
+
+# The varible that is created inside a function, you can't call that outside of the function. For ex: from the upper example you can't call 'sumNum' outside anywhere else. It means it's out of scope.
+
+# A bit about Strings
+
+# This will pring out the first 6 string from the variable.
+ long_String = " I'll catch you if you fall"
+ print(long_String[0:6])
+ 

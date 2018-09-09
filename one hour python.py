@@ -215,8 +215,81 @@ print(long_String.find("fall"))
 #True or false of the character that have been entered in a string
 print(long_String.isalpha())
 print(long_String.isalnum())
-print(le(long_String))
+print(len(long_String))
 print(long_String.replace("fall", "ground"))
 print(long_String.strip())
 quote_list = long_String.split(" ")
 print(quote_list)
+
+
+# A bit about objects
+
+class Animal:
+    __name = None
+    __height = 0
+    __weight = 0
+    __sound = 0
+
+    def __init__(self, name, height, weight, sound):
+        self.__name = name
+        self.__height = height
+        self.__weight = weight
+        self.__sound = sound
+
+    def set_name(self, name):
+        self.__name = name
+
+    def set_height(self, height):
+        self.__height = height
+
+    def set_weight(self, weight):
+        self.__weight = weight
+
+    def set_sound(self, sound):
+        self.__sound = sound
+
+    def get_name(self):
+        return self.__name
+
+    def get_height(self):
+        return self.__height
+
+    def get_weight(self):
+        return self.__weight
+
+    def get_sound(self):
+        return self.__sound
+
+
+    def get_type(self):
+        print("Animal")
+
+    def toSorting(self):
+        return "{} is {} cm tall and {} kilogerms and say {}".format(self.__name, self.__height, self.__weight, self.__sound)
+
+cat = Animal('Bella', 33,55, 'Meow')
+print(cat)
+
+# INheritence
+
+class Dog(Animal):
+    __owner = ""
+
+    def __init__(self, name, height, weight, sound, owner):
+        self.__owner = owner
+        super(Dog, self).__init__(nsme,height,weight,sound)
+
+    def set_owner(set, owner):
+        self.__owner = __owner
+
+    def get_owner(self):
+        return self.__owner
+
+    def get_type(self):
+        print("Dog")
+
+    def toSorting(self):
+        return "{} is {} cm tall and {} kilogerms and says {} His owner is {}".format(self.__name, self.__height, self.__weight, self.__sound, self.__owner)
+
+
+# A bit about Polymorphism

@@ -31,7 +31,7 @@ famous_person = "Sundar Pichai"
 famous_person_message = famous_person + " said “Keep pushing your limits.”"
 print(famous_person_message)
 
-
+#2.7 [ What this is doing is using strip methods you can get rid of the extra space from the beginning and at the end of the string]
 
 Frst_name = " Fariha  "
 Lst_name = " Zaman  "

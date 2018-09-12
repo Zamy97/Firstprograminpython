@@ -31,8 +31,24 @@
 # print(famous_person_message)
 
 # 2.7
+#
+# Frst_name = " Fariha  "
+# Lst_name = " Zaman  "
+# sundori = Frst_name.lstrip().rstrip() +  Lst_name.lstrip().rstrip()
+# print(sundori.strip())
 
-Frst_name = " Fariha  "
-Lst_name = " Zaman  "
-sundori = Frst_name.lstrip().rstrip() +  Lst_name.lstrip().rstrip()
-print(sundori.strip())
+# 2.8
+
+addition = 5 + 3
+print(addition)
+
+subtraction = 10 - 2
+print(subtraction)
+
+multiplication = 4 * 2
+print(multiplication)
+
+division = round(8 / 1)
+print(division)
+
+# 2.9

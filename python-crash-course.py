@@ -28,3 +28,8 @@ print(Macs.strip())
 
 message = "one of pytho's strengths is it's diverse community."
 print(message.title())
+
+age = 21
+
+birthday_wish = "Happy " + str(age) + "st Birthday"
+print(birthday_wish)

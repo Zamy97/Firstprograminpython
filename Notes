@@ -1,0 +1,15 @@
+              ## Variables ##
+
+* Remember variables names can contain only letter, numbers and underscores. Don't start with a number.
+
+* Don't have any space in your variable names, however, you can use underscore in your variable names.
+
+* Don't use python keywords and function names as your variable names.
+
+* Keep them clear and descriptive as much as possible.
+
+* A name error usually means  we either forgot to set a variable's value before using it, or we made a spelling mistake when entering the variable's name.
+
+# The best way to understand new programming concepts is to try using them in your programs.
+
+             ## Strings ##

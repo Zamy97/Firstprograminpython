@@ -1,5 +1,5 @@
 #from math import *
-'''
+
 Andrea = "She loves singing."
 
 print(Andrea.replace("singing", "Dancing"))
@@ -212,5 +212,3 @@ def translate(phrase):
     return translation
 
 print(translate(input("Enter a phrase: ")))
-
-'''

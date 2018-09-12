@@ -31,4 +31,6 @@ Concatenating = The action of putting linking or putting two things together.
 
 * To add a new line in your text you can do so by adding \n in your text.
 
-* To ensure that no whitespace exists at the right end of a string, use the rstrip() method.
+* To ensure that no whitespace exists at the right end of a string, use the rstrip() method to get rid of space in the right side. Then you can do lstrip() to get rid of extra space from the left side. You can call the strip() method at the end to get rid of extra space from both sides in your string values.
+
+* if you have to use an apostrophe inside your string, make sure to use "" as the opening and closing of your string or else you'll confuse python and it won't know when the string is starting or ending. s

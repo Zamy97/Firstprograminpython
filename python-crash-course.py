@@ -19,11 +19,12 @@ print(simple_message.upper())
 print(simple_message.lower())
 
 
-iphone = '     macs are really really expensive      '
-
 # What this is doing is it's telling the lstrip and rstrip to act on the iphone varible. What it'll do is it'll get rid of the space from both sides of the value of the variable.
-
+iphone = '     macs are really really expensive      '
 Macs = iphone.rstrip().lstrip()
-
-
 print(Macs.strip())
+
+
+
+message = "one of pytho's strengths is it's diverse community."
+print(message.title())

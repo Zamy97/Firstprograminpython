@@ -13,3 +13,22 @@
 # The best way to understand new programming concepts is to try using them in your programs.
 
              ## Strings ##
+
+* Strings are simply a series of characters. Anything inside quotes is considered a string in python and you can use single or double quotes around your strings.
+
+* You can Concatenate two string values together. To do that you can use '+' to combine things.
+
+* You can use concatenation to compose a message and then store the entire message in a variable.
+
+            ## Methods ##
+* A method is an action that python can perform on a piece of data.
+
+* Every method is followed by a set of parentheses, because methods often needs additional information to do their work. That additional information is usually provided inside that parenthesis.
+
+Concatenating = The action of putting linking or putting two things together.
+
+* To add a little bit of indentation in your text you can include "\t" in your message and it'll add a little bit of gap in your text.
+
+* To add a new line in your text you can do so by adding \n in your text.
+
+* To ensure that no whitespace exists at the right end of a string, use the rstrip() method.

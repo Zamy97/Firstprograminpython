@@ -37,18 +37,22 @@
 # sundori = Frst_name.lstrip().rstrip() +  Lst_name.lstrip().rstrip()
 # print(sundori.strip())
 
-# 2.8
-
-addition = 5 + 3
-print(addition)
-
-subtraction = 10 - 2
-print(subtraction)
-
-multiplication = 4 * 2
-print(multiplication)
-
-division = round(8 / 1)
-print(division)
+# # 2.8
+#
+# addition = 5 + 3
+# print(addition)
+#
+# subtraction = 10 - 2
+# print(subtraction)
+#
+# multiplication = 4 * 2
+# print(multiplication)
+#
+# division = round(8 / 1)
+# print(division)
 
 # 2.9
+
+favorite_number = 19
+fav_msg = "my favorite age number is " + str(favorite_number) + " I don't know why, but I liked being " + str(favorite_number) + " years old."
+print(fav_msg.title())

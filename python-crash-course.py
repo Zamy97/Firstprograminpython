@@ -49,9 +49,12 @@
 
 # To pop an  item from the list you can use the pop method which will get rid of the last item from your list. However, you can use that item later. What is happening on the next line of code is where it's popping the last motocycle item from the list but then it's storing that value in a new variable so you can use that popped value later on if you want to.
 
-motorcycles = ['Honda', 'Suzuki', 'yamaha']
+motorcycles = ['Honda', 'Suzuki', 'yamaha','iphone', 'macbooks', 'water']
 popped_motorcycle = motorcycles.pop(0)
+# print(motorcycles)
+# print(popped_motorcycle)
+# cycle = "if I ever buy a motocycle, i'll buy a " + popped_motorcycle + "."
+# print(cycle)
+
+motorcycles.remove('water')
 print(motorcycles)
-print(popped_motorcycle)
-cycle = "if I ever buy a motocycle, i'll buy a " + popped_motorcycle + "."
-print(cycle)

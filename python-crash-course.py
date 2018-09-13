@@ -41,6 +41,15 @@
 # print(coop_people)
 
 # What this is doing is it's inserting a value inside the existing list already. It's telling python that it needs to add an inside inside the list of empty_list. But it's specificly adding it in one position, for ex it's putting it right before hydro flask element.
-empty_list = ['aktar','hydro-flask','iphone']
-empty_list.insert(1, 'Macbook-pro')
-print(empty_list)
+# empty_list = ['aktar','hydro-flask','iphone']
+# empty_list.insert(1, 'Macbook-pro')
+# print(empty_list)
+# del empty_list[2]
+# print(empty_list)
+
+# To pop an  item from the list you can use the pop method which will get rid of the last item from your list. However, you can use that item later. What is happening on the next line of code is where it's popping the last motocycle item from the list but then it's storing that value in a new variable so you can use that popped value later on if you want to.
+
+motorcycles = ['Honda', 'Suzuki', 'yamaha']
+popped_motorcycle = motorcycles.pop()
+print(motorcycles)
+print(popped_motorcycle)

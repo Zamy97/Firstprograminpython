@@ -51,4 +51,8 @@ Concatenating = The action of putting linking or putting two things together.
 
 * You can a new element at any position in your list using the insert() method. You do this by specifying the index of the new element and the value of the new item.
 
-* You can remove an item from a list. To do so you are going to have to use the remove method to do that. You can remove an item according to it's position in the list or acccording to it's value.
+* You can remove an item from a list. To do so you are going to have to use the remove method to do that. You can remove an item according to it's position in the list or according to it's value.for ex: del [your variable name][the position of what you want to remove]
+
+* You can remove an item from any position in a list using the del statement if you know its index.
+
+* The pop() method removes the last item in a list, but it lets you word with that item after removing it.

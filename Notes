@@ -56,3 +56,7 @@ Concatenating = The action of putting linking or putting two things together.
 * You can remove an item from any position in a list using the del statement if you know its index.
 
 * The pop() method removes the last item in a list, but it lets you word with that item after removing it.
+
+* Remember that each time you use pop(), the item you word with is no longer stored in the list.
+
+* Remember: When you want to delete an item from a list and not use that item in any way, use the del statement; if you want to use an item as you remove it, use the pop() method.

@@ -45,3 +45,6 @@ Concatenating = The action of putting linking or putting two things together.
            ## Index position ##
 * Index position starts at 0.
 * Python has a special syntax for accessing the last element in a list. By asking for the item at index '-1'
+* When you append an item to the list it it usually added at the end of the list.
+
+* To put your users in control, start by defining an empty list that will hold the users’ values. Then append each new value provided to the list you just created.

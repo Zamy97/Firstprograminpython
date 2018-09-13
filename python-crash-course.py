@@ -40,8 +40,7 @@
 # coop_people.append('Saeed')
 # print(coop_people)
 
-empty_list = []
-empty_list.append('aktar')
-empty_list.append('hydro-flask')
-empty_list.append('iphone')
+# What this is doing is it's inserting a value inside the existing list already. It's telling python that it needs to add an inside inside the list of empty_list. But it's specificly adding it in one position, for ex it's putting it right before hydro flask element.
+empty_list = ['aktar','hydro-flask','iphone']
+empty_list.insert(1, 'Macbook-pro')
 print(empty_list)

@@ -41,3 +41,7 @@ Concatenating = The action of putting linking or putting two things together.
 * Python calls any number with a decimal point a float.
 
 * When you use integar within strings, you need to specify explicitly that you want python to use the integar as a string of characters. You can do this by wrapping the variable in the str() function, which tells python to represent non-string values as strings.
+
+           ## Index position ##
+* Index position starts at 0.
+* Python has a special syntax for accessing the last element in a list. By asking for the item at index '-1'

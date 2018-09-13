@@ -65,7 +65,12 @@ my_guests = ['Michael Sayman', 'Tim Cook', 'Anthony D. Mays', 'Sundar Pichai', '
 
 my_guests.pop(0)
 my_guests.insert(0, 'Fariha')
+my_guests.insert(3, 'Tamim')
+my_guests.append('Google')
 
 message_to_guest0 = "Hello " + my_guests[0] + "I am inviting you to have a dinner with me so I'd get to know you a bit more and may be a get a bit of advice from you"
 
 print(message_to_guest0.title())
+print(my_guests)
+
+# 3.7 

@@ -57,9 +57,3 @@ print(division)
 favorite_number = 19
 fav_msg = "my favorite age number is " + str(favorite_number) + " I don't know why, but I liked being " + str(favorite_number) + " years old."
 print(fav_msg.title())
-
-
-
-# Chapter 3
-
-# 3.1

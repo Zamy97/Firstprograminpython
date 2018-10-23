@@ -60,3 +60,32 @@ Concatenating = The action of putting linking or putting two things together.
 * Remember that each time you use pop(), the item you word with is no longer stored in the list.
 
 * Remember: When you want to delete an item from a list and not use that item in any way, use the del statement; if you want to use an item as you remove it, use the pop() method.
+
+                  ## For loops ##
+
+* When choosing a variable name for a for loop, use a meaningful name that represents a single item from the list. Using a singular and plural names can help you identify whether a section of code is working with a single element from the list of the entire list.
+
+* You can have just about anything inside a for loop! Every indented line after the 'for cat in Cats' is considered inside the loop, each indented line is executed once for each value in the list. using that you can do as much work as you like with each value in the list.
+
+* If you don't want anything to be inside the for loop don't indent it! Keep it outside the for loop so it doesn't repeat for each item in the list.
+
+* The colon at the end of a for statement tells python to interpret the next line as the start of the loop
+
+                  ## Indentation error ##
+
+ * Python uses indentation to determine when one line of code is connected to the line above it.
+
+ *The only lines that you should indent are the actions you want to repeat for each item in a for loop.
+
+ * If an action is repeated many times when it should be executed only once, determine whether you just need to unindent the code for that action.
+
+                # Making a Numerical List #
+* python's range( function makes it easy to generate a series of numbers. you can use range( function to print a series of numbers))
+
+* The output of range will never contain the last number of the range.
+
+        # Simple Statistic with a list of NUmbers#
+
+* if you want to find the min number in a list use "min()"
+if you want to find the max number in the list use this max()
+if you want to get the sum of the numbers in your list use this sum()

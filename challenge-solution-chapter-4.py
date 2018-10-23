@@ -66,10 +66,29 @@
 
 # 4.3 (Counting to Twenty)
 
-one_thru_twenty = list(range(1,21))
-print(one_thru_twenty)
+# one_thru_twenty = list(range(1,21))
+#     print(one_thru_twenty)
 
-one_thru_million = list(range(1,1000000))
+# 4.4
 
-for number in one_thru_million:
-    print(number)
+# one_thru_million = list(range(1,1000000))
+#
+# for number in one_thru_million:
+#     print(number)
+
+# 4.6
+one_thru_twenty_odd = list(range(1,21,2))
+print(one_thru_twenty_odd)
+
+# 4.8
+
+cubes_list = []
+for value in range(1,10):
+    cube = value**3
+    cubes_list.append(cube)
+
+print(cubes_list)
+
+# 4.9
+
+first_ten_numbers_cubes_list = [value**3 for value in range(1,11)]

@@ -101,3 +101,4 @@ if you want to get the sum of the numbers in your list use this sum()
 * When compared with lists, tuples are simple data structures. Use them when you want to store a set of values that should not be changed through- out the life of a program.
 
                   ## If statement##
+* Python's if statement allows you to examine the current state of a program and respond appropriately to that state.

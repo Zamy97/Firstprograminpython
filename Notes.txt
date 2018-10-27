@@ -99,3 +99,5 @@ if you want to get the sum of the numbers in your list use this sum()
 * With tuplese you can create a list that cannot be changed like a normal list. Another words Tuple lists are immuatable. An immuatable list is called a tuple.
 
 * When compared with lists, tuples are simple data structures. Use them when you want to store a set of values that should not be changed through- out the life of a program.
+
+                  ## If statement##

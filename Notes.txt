@@ -89,3 +89,6 @@ Concatenating = The action of putting linking or putting two things together.
 * if you want to find the min number in a list use "min()"
 if you want to find the max number in the list use this max()
 if you want to get the sum of the numbers in your list use this sum()
+
+                               # Slicing a list #
+* To slice an a list you need to tell the program what are the objects you want from that list! Kind of like the range where you can tell that you want the value from one point to the other! 

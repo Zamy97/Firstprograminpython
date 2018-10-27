@@ -129,17 +129,29 @@ players = ['charles', 'martina', 'michael', 'florence', 'eli']
 # print("the last three item in the list are: " + str(make_school_student[-3:]))
 
 # 4.11 (My pizza and your pizza)
-my_favorite_foods = ['curry','boba','iphone','macbook','tiger drinks','read bull']
-my_friends_favorite_food = my_favorite_foods[:]
-my_favorite_foods.append('I love Google')
-my_friends_favorite_food.append('I hate Facebook')
 
-print("these are my favorite food: " + str(my_favorite_foods))
-print("These are my friend's fav food: " + str(my_friends_favorite_food))
+# my_favorite_foods = ['curry','boba','iphone','macbook','tiger drinks','read bull']
+# my_friends_favorite_food = my_favorite_foods[:]
+# my_favorite_foods.append('I love Google')
+# my_friends_favorite_food.append('I hate Facebook')
+#
+# print("these are my favorite food: " + str(my_favorite_foods))
+# print("These are my friend's fav food: " + str(my_friends_favorite_food))
+#
+# # 4.12 (More Loops)
 
-# 4.12 (More Loops)
-
-for food_item in my_favorite_foods:
-    print(food_item.title())
+# for food_item in my_favorite_foods:
+#     print(food_item.title())
 
 # Tuples
+dimension = (200, 500, 600, 800)
+print("Original Version of Dimension: ")
+for item in dimension:
+    print(item)
+
+dimension = (9000,6000,3000,2000,)
+print('Modified Version of Dimension: ')
+for item in dimension:
+    print(item)
+
+# 4.13 (Buffet)

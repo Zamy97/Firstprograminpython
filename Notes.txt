@@ -91,4 +91,6 @@ if you want to find the max number in the list use this max()
 if you want to get the sum of the numbers in your list use this sum()
 
                                # Slicing a list #
-* To slice an a list you need to tell the program what are the objects you want from that list! Kind of like the range where you can tell that you want the value from one point to the other! 
+* To slice an a list you need to tell the program what are the objects you want from that list! Kind of like the range where you can tell that you want the value from one point to the other!
+
+* When you pring the slice it prints the values starting with the first number provided and ends with the last value. It includes the both of them when it prints out the list.

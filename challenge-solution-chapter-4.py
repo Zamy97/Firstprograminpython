@@ -110,7 +110,36 @@ players = ['charles', 'martina', 'michael', 'florence', 'eli']
 
 
 
+#
+# my_foods = ['pizza', 'falafel', 'carrot cake']
+# friends_food = my_foods[:]
+# my_foods.append("Burrito")
+# friends_food.append("curry")
+#
+#
+# print("My favorite foods are: " + str(my_foods))
+# print("my friend's favorite foods are: " + str(friends_food))
 
-my_foods = ['pizza', 'falafel', 'carrot cake']
-friends_food = my_foods[:]
-print(friends_food)
+
+# 4.10 (Slices)
+
+# make_school_student = ['Fang','Nathan','uchenna','erik','Noah','Asim','Vincenzo','Rushane','Goru Sagol']
+# print("first three studetns at Make School are: " + str(make_school_student[:3]))
+# print(make_school_student[3:6])
+# print("the last three item in the list are: " + str(make_school_student[-3:]))
+
+# 4.11 (My pizza and your pizza)
+my_favorite_foods = ['curry','boba','iphone','macbook','tiger drinks','read bull']
+my_friends_favorite_food = my_favorite_foods[:]
+my_favorite_foods.append('I love Google')
+my_friends_favorite_food.append('I hate Facebook')
+
+print("these are my favorite food: " + str(my_favorite_foods))
+print("These are my friend's fav food: " + str(my_friends_favorite_food))
+
+# 4.12 (More Loops)
+
+for food_item in my_favorite_foods:
+    print(food_item.title())
+
+# Tuples

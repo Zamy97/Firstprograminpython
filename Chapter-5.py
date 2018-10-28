@@ -10,16 +10,28 @@
 
 # Checking for inequality
 
-requested_topping = 'mushroom'
-if requested_topping != 'pencil':
-    print("hold the anchovies")
+# requested_topping = 'mushroom'
+# if requested_topping != 'pencil':
+#     print("hold the anchovies")
 
 # Checking Whether a Value Is Not in a List
 
-banned_users = ['andrew', 'carolina', 'david']
-user = 'Marie'
+# banned_users = ['andrew', 'carolina', 'david']
+# user = 'Marie'
+#
+# if user not in banned_users:
+#     print(user.title() + ", you can do whatever you want")
 
-if user not in banned_users:
-    print(user.title() + ", you can do whatever you want")
+# 5.1 (Conditional Test)
 
-# Boolean expressions
+car = 'subaru'
+print("Is car == 'subaru' ?? I predict subaru")
+print(car == 'subaru')
+
+animal = "monkey"
+print("Guess the animal? Is it monkey?")
+print(animal == "lion")
+
+is_passed = "passed"
+print("Do you think you passed the test? type Passed or failed?")
+print(is_passed == "passed")

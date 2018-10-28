@@ -118,3 +118,5 @@ To find out whether a particular value is already in a list use the key word in.
                                         ## Boolean Expression##
 
 * A Boolean expression is just Another name for a conditional test.
+
+* Boolean values provides an efficient way to track the state of a program or a particular condition that is important in your program.

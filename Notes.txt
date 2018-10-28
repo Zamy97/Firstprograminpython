@@ -93,7 +93,7 @@ if you want to get the sum of the numbers in your list use this sum()
                                # Slicing a list #
 * To slice an a list you need to tell the program what are the objects you want from that list! Kind of like the range where you can tell that you want the value from one point to the other!
 
-* When you pring the slice it prints the values starting with the first number provided and ends with the last value. It includes the both of them when it prints out the list.
+* When you print the slice it prints the values starting with the first number provided and ends with the last value. It includes the both of them when it prints out the list.
 
                     ## Tuples
 * With tuplese you can create a list that cannot be changed like a normal list. Another words Tuple lists are immuatable. An immuatable list is called a tuple.
@@ -106,3 +106,7 @@ if you want to get the sum of the numbers in your list use this sum()
 * When you want to determine whether two values are not equal, you can combine an exclamation point and an equal sign (!=). The '!'
 
 * Most of the conditional expressions you write will test for equality, but sometimes you'll find it more efficient to test for inequality.
+
+* You can include various mathematical comparisons in your conditional statements as well, such as less than, less than or equal to, greater than, and greater than or equal to.
+
+* Each mathematical comparison can be used as part of an if statement, which can help you detect the exact conditions of interest.

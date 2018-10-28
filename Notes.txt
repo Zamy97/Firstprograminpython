@@ -110,3 +110,7 @@ if you want to get the sum of the numbers in your list use this sum()
 * You can include various mathematical comparisons in your conditional statements as well, such as less than, less than or equal to, greater than, and greater than or equal to.
 
 * Each mathematical comparison can be used as part of an if statement, which can help you detect the exact conditions of interest.
+
+* You can use "and" "or" to check two different conditions at once.
+
+To find out whether a particular value is already in a list use the key word in.

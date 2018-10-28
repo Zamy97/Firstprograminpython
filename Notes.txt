@@ -102,3 +102,7 @@ if you want to get the sum of the numbers in your list use this sum()
 
                   ## If statement##
 * Python's if statement allows you to examine the current state of a program and respond appropriately to that state.
+
+* When you want to determine whether two values are not equal, you can combine an exclamation point and an equal sign (!=). The '!'
+
+* Most of the conditional expressions you write will test for equality, but sometimes you'll find it more efficient to test for inequality.

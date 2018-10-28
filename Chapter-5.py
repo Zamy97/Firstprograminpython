@@ -1,11 +1,15 @@
-# A Simple Example
+# A Simple Example of IF statememnt
 
-cars = ['audi', 'bmw', 'subaru', 'toyota']
+# cars = ['audi', 'bmw', 'subaru', 'toyota']
+#
+# for car in cars:
+#     if car == 'bmw':
+#         print(car.upper())
+#     else:
+#         print(car.title())
 
-for car in cars:
-    if car == 'bmw':
-        print(car.upper())
-    else:
-        print(car.title())
-        
-# start from page 78
+
+# Checking for inequality
+requested_topping = 'mushroom'
+if requested_topping != 'pencil':
+    print("hold the anchovies")

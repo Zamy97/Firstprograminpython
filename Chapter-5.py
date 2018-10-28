@@ -17,7 +17,9 @@ if requested_topping != 'pencil':
 # Checking Whether a Value Is Not in a List
 
 banned_users = ['andrew', 'carolina', 'david']
-user = 'andrew'
+user = 'Marie'
 
 if user not in banned_users:
     print(user.title() + ", you can do whatever you want")
+
+# Boolean expressions

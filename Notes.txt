@@ -114,3 +114,7 @@ if you want to get the sum of the numbers in your list use this sum()
 * You can use "and" "or" to check two different conditions at once.
 
 To find out whether a particular value is already in a list use the key word in.
+
+                                        ## Boolean Expression##
+
+* A Boolean expression is just Another name for a conditional test.

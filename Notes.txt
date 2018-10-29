@@ -117,6 +117,7 @@ if you want to get the sum of the numbers in your list use this sum()
 
 * The simple kind of if statement has one test and one action.
 
+* In summery, if you want only one block of code to run, use an if-elif-else chain. If more than one block of code needs to run, use a series of independent if statements.
 
 
 

@@ -183,16 +183,35 @@
 
 # 5.7 (Favorite Fruit)
 
-my_favorite_fruits = ["Mango","Lichi","Tomato","Lemon","Straberry"]
+# my_favorite_fruits = ["Mango","Lichi","Tomato","Lemon","Straberry"]
+#
+# if "Mango" in my_favorite_fruits:
+#     print("Dmn man you love mangoes")
+# if "Banana" in my_favorite_fruits:
+#     print("Do you like Banana this much?")
+# if "Tomato" in my_favorite_fruits:
+#     print("you seem to love Tomato")
+# if "Lemon" in my_favorite_fruits:
+#     print("Make some lemon juice with Lemon")
 
-if "Mango" in my_favorite_fruits:
-    print("Dmn man you love mangoes")
-if "Banana" in my_favorite_fruits:
-    print("Do you like Banana this much?")
-if "Tomato" in my_favorite_fruits:
-    print("you seem to love Tomato")
-if "Lemon" in my_favorite_fruits:
-    print("Make some lemon juice with Lemon")
+
+# Checking if the list is empty
+
+# requested_toppings = []
+# if requested_toppings:
+#     for requested_topping in requested_toppings:
+#         print("adding" + requested_topping + ".")
+# else:
+#     print("Do you want plain pizza?")
 
 
-# Start from page 90 next time
+#USING MULTIPLE LISTS
+available_toppings = ['mushrooms', 'olives', 'green peppers', 'pepperoni', 'pineapple', 'extra cheese']
+
+requested_toppings = ['mushrooms', 'french fries', 'extra cheese']
+
+for requested_topping in requested_toppings:
+    if requested_topping in available_toppings:
+        print("Adding " + requested_topping + ".")
+    else:
+        print("Sorry we don't have " + requested_topping + ".")

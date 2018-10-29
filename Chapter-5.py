@@ -136,34 +136,46 @@
 
 # 5.5 (Alien Color-3 using if-elif-else)
 
-first_alien_color = "Blue"
-
-if first_alien_color is "Green":
-    print("Good job! You just earned 5 points")
-elif first_alien_color is "Blue":
-    print("You just earned 10 points")
-elif first_alien_color is "Red":
-    print("you just earned 15 points")
-
-
-second_alien_color = "Green"
-
-if second_alien_color is "Green":
-    print("you just earned 5 points")
-elif second_alien_color is "Red":
-    print("You just earned 15 points")
-elif second_alien_color is "Blue":
-    pritn("you just earned 10 points")
-
-
-third_alien_color = "Red"
-
-if third_alien_color is "Red":
-    print("you just earned 15 points")
-elif third_alien_color is "Green":
-    print("you don't get anything")
-elif third_alien_color is "Blue":
-    print("just go home man")
+# first_alien_color = "Blue"
+#
+# if first_alien_color is "Green":
+#     print("Good job! You just earned 5 points")
+# elif first_alien_color is "Blue":
+#     print("You just earned 10 points")
+# elif first_alien_color is "Red":
+#     print("you just earned 15 points")
+#
+#
+# second_alien_color = "Green"
+#
+# if second_alien_color is "Green":
+#     print("you just earned 5 points")
+# elif second_alien_color is "Red":
+#     print("You just earned 15 points")
+# elif second_alien_color is "Blue":
+#     pritn("you just earned 10 points")
+#
+#
+# third_alien_color = "Red"
+#
+# if third_alien_color is "Red":
+#     print("you just earned 15 points")
+# elif third_alien_color is "Green":
+#     print("you don't get anything")
+# elif third_alien_color is "Blue":
+#     print("just go home man")
 
 
 # 5.6 (Stages of life)
+persons_age = 65
+
+if persons_age <= 2:
+    print(" You are just a baby still!")
+elif persons_age < 13:
+    print("You are a kid bro")
+elif persons_age < 20:
+    print("You are a teenager! Make Sure you focus on your school")
+elif persons_age < 65:
+    print("you are an adult. Get your life together")
+elif persons_age >= 65:
+    print("Have you enjoyed your life thus far?")

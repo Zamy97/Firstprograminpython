@@ -167,15 +167,29 @@
 
 
 # 5.6 (Stages of life)
-persons_age = 65
 
-if persons_age <= 2:
-    print(" You are just a baby still!")
-elif persons_age < 13:
-    print("You are a kid bro")
-elif persons_age < 20:
-    print("You are a teenager! Make Sure you focus on your school")
-elif persons_age < 65:
-    print("you are an adult. Get your life together")
-elif persons_age >= 65:
-    print("Have you enjoyed your life thus far?")
+# persons_age = 65
+#
+# if persons_age <= 2:
+#     print(" You are just a baby still!")
+# elif persons_age < 13:
+#     print("You are a kid bro")
+# elif persons_age < 20:
+#     print("You are a teenager! Make Sure you focus on your school")
+# elif persons_age < 65:
+#     print("you are an adult. Get your life together")
+# elif persons_age >= 65:
+#     print("Have you enjoyed your life thus far?")
+
+# 5.7 (Favorite Fruit)
+
+my_favorite_fruits = ["Mango","Lichi","Tomato","Lemon","Straberry"]
+
+if "Mango" in my_favorite_fruits:
+    print("Dmn man you love mangoes")
+if "Banana" in my_favorite_fruits:
+    print("Do you like Banana this much?")
+if "Tomato" in my_favorite_fruits:
+    print("you seem to love Tomato")
+if "Lemon" in my_favorite_fruits:
+    print("Make some lemon juice with Lemon")

@@ -193,3 +193,6 @@ if "Tomato" in my_favorite_fruits:
     print("you seem to love Tomato")
 if "Lemon" in my_favorite_fruits:
     print("Make some lemon juice with Lemon")
+
+
+# Start from page 90 next time

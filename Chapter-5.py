@@ -206,12 +206,26 @@
 
 
 #USING MULTIPLE LISTS
-available_toppings = ['mushrooms', 'olives', 'green peppers', 'pepperoni', 'pineapple', 'extra cheese']
 
-requested_toppings = ['mushrooms', 'french fries', 'extra cheese']
+# available_toppings = ['mushrooms', 'olives', 'green peppers', 'pepperoni', 'pineapple', 'extra cheese']
+#
+# requested_toppings = ['mushrooms', 'french fries', 'extra cheese']
+#
+# for requested_topping in requested_toppings:
+#     if requested_topping in available_toppings:
+#         print("Adding " + requested_topping + ".")
+#     else:
+#         print("Sorry we don't have " + requested_topping + ".")
 
-for requested_topping in requested_toppings:
-    if requested_topping in available_toppings:
-        print("Adding " + requested_topping + ".")
+
+# 5.8 (Hello Admin)
+
+usernames = ["Zamy97","admin","Fariha_Zaman","Bushra31","Tasnima_21"]
+
+for each_user in usernames:
+    if each_user == "admin":
+        print("Hello Admin! Would you like to see a status report?")
     else:
-        print("Sorry we don't have " + requested_topping + ".")
+        print("Hello " + each_user + "! Thank you for logging back in again")
+
+# 5.9 (No Users)

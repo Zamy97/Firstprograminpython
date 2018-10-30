@@ -35,21 +35,44 @@
 
 
 # Tracking Alien's Movement
-alien_4 = {'x-position':0, 'y-position':25, 'speed':'medium'}
-print("Original x-position: " + str(alien_4['x-position']))
+
+# alien_4 = {'x-position': 0, 'y-position': 25, 'speed':'medium'}
+# print("Original x-position: " + str(alien_4['x-position']))
 
 
 # Move the Alien to the right
 #Determine how far to move the alien based on it's current speed'
+# if alien_4['speed'] == 'slow':
+#     x_increment = 1
+# elif alien_4['speed'] == 'medium':
+#     x_increment = 2
+# else:
+#     x_increment = 3
+#
+# # The new position is the old position plus the increment.
+# alien_4['x_position'] = alien_4['x_position'] + x_increment
+#
+# print("New x-position: " + str(alien_4['x_position']))
 
-if alien_4['speed']=='slow':
-    x_increment = 1
-elif alien_4['speed']=='medium':
-    x_increment = 2
-else:
-    x_increment = 3
 
-# The new position is the old position plus the increment.
-alien_4['x_position'] = alien_4['x_position'] + x_increment
 
-print("New x-position: " + str(alien_4['x_position']))
+
+# Remove from the dictionary
+# alien_5 = {'color': 'Blue', 'points':10}
+# print(alien_5)
+#
+# del alien_5['points']
+# print(alien_5)
+#
+#
+# favorite_languages = {'jen':'python','sarah':'c','edward':'euby','aktar':'python',}
+# print("Sarah's favorite language is " + favorite_languages['sarah'].title() + ".")
+# print("Aktar's favorite language is " + favorite_languages['aktar'].title() + ".")
+
+
+
+
+# 6.1 (Person)
+
+my_favorite_person = {'first_name':'Fariha','last_name':'Zaman','age':18,'city':'Warren','state':'Michigan'}
+print("My favorite person's name is " + my_favorite_person['first_name'] +  my_favorite_person['last_name'] + ". She is "+ str(my_favorite_person['age']) + " years old. she lives in "+my_favorite_person['city']+ "," + my_favorite_person['state'])

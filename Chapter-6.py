@@ -76,3 +76,8 @@
 
 my_favorite_person = {'first_name':'Fariha','last_name':'Zaman','age':18,'city':'Warren','state':'Michigan'}
 print("My favorite person's name is " + my_favorite_person['first_name'] +  my_favorite_person['last_name'] + ". She is "+ str(my_favorite_person['age']) + " years old. she lives in "+my_favorite_person['city']+ "," + my_favorite_person['state'])
+
+# 6.2 (Favorite Numbers)
+
+favorite_number = {'Andrew':8, 'Aktar':19,'Andrea':25,'Ashraf':94,'Bushra':15}
+print("favorite_number")

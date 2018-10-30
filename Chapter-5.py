@@ -228,4 +228,17 @@ for each_user in usernames:
     else:
         print("Hello " + each_user + "! Thank you for logging back in again")
 
+
+
+
+#Write a Python program to find those numbers which are divisible by 7 and multiple of 5, between 1500 and 2700 (both included).
+
+# number_list = []
+#
+# for every_number in range(1500, 2701):
+#     if every_number%7 == 0 and every_number%5 == 0:
+#         number_list.append(every_number)
+# print(number_list)
+
+
 # 5.9 (No Users)

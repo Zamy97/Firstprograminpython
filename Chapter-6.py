@@ -70,14 +70,38 @@
 # print("Aktar's favorite language is " + favorite_languages['aktar'].title() + ".")
 
 
-
-
 # 6.1 (Person)
 
-my_favorite_person = {'first_name':'Fariha','last_name':'Zaman','age':18,'city':'Warren','state':'Michigan'}
-print("My favorite person's name is " + my_favorite_person['first_name'] +  my_favorite_person['last_name'] + ". She is "+ str(my_favorite_person['age']) + " years old. she lives in "+my_favorite_person['city']+ "," + my_favorite_person['state'])
+# my_favorite_person = {'first_name':'Fariha','last_name':'Zaman','age':18,'city':'Warren','state':'Michigan.'}
+# print("My favorite person's name is " + my_favorite_person['first_name'] +  my_favorite_person['last_name'] + ". She is "+ str(my_favorite_person['age']) + " years old. she lives in "+my_favorite_person['city']+ "," + my_favorite_person['state'])
 
 # 6.2 (Favorite Numbers)
 
-favorite_number = {'Andrew':8, 'Aktar':19,'Andrea':25,'Ashraf':94,'Bushra':15}
-print("favorite_number")
+# favorite_number = {'Andrew':8, 'Aktar':19,'Andrea':25,'Ashraf':94,'Bushra':15}
+# print("Andrew's Favorite number is " + str(favorite_number['Andrew']) +  ". Aktar's favorite number is " + str(favorite_number['Aktar']) + ". Andrea's favorite number is " + str(favorite_number['Andrea']))
+
+# 6.3 (Glossary)
+
+glossary = {
+    'string': 'A series of characters.',
+    'comment': 'A note in a program that the Python interpreter ignores.',
+    'list': 'A collection of items in a particular order.',
+    'loop': 'Work through a collection of items, one at a time.',
+    'dictionary': "A collection of key-value pairs.",
+    }
+
+
+word = 'string'
+print("\n" + word.title() + ": " + glossary[word])
+
+word = 'comment'
+print("\n" + word.title() + ": " + glossary[word])
+
+word = 'list'
+print("\n" + word.title() + ": " + glossary[word])
+
+word = 'loop'
+print("\n" + word.title() + ": " + glossary[word])
+
+word = 'dictionary'
+print("\n" + word.title() + ": " + glossary[word])

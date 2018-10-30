@@ -82,26 +82,74 @@
 
 # 6.3 (Glossary)
 
-glossary = {
-    'string': 'A series of characters.',
-    'comment': 'A note in a program that the Python interpreter ignores.',
-    'list': 'A collection of items in a particular order.',
-    'loop': 'Work through a collection of items, one at a time.',
-    'dictionary': "A collection of key-value pairs.",
-    }
+# glossary = {
+#     'string': 'A series of characters.',
+#     'comment': 'A note in a program that the Python interpreter ignores.',
+#     'list': 'A collection of items in a particular order.',
+#     'loop': 'Work through a collection of items, one at a time.',
+#     'dictionary': "A collection of key-value pairs.",
+#     }
+#
+#
+# word = 'string'
+# print("\n" + word.title() + ": " + glossary[word])
+#
+# word = 'comment'
+# print("\n" + word.title() + ": " + glossary[word])
+#
+# word = 'list'
+# print("\n" + word.title() + ": " + glossary[word])
+#
+# word = 'loop'
+# print("\n" + word.title() + ": " + glossary[word])
+#
+# word = 'dictionary'
+# print("\n" + word.title() + ": " + glossary[word])
+
+# Looping through a dictionary
+
+# user_0 = {
+#     'username': 'fariha18',
+#     'first_name': 'Fariha',
+#     'last_name': 'Zaman',
+#     }
+# for key, value in user_0.items():
+#     print("\nKey: " + key)
+#     print("value: " + value)
+
+# Looping through a dictionary
+
+# favorite_languages = {
+#        'jen': 'python',
+#        'sarah': 'c',
+#        'edward': 'ruby',
+#        'phil': 'python',
+#        }
+#
+# for name, language in favorite_languages.items():
+#     print(name.title() + "'s favorite language is " + language.title()+ ".")
+#
+# for name in favorite_languages.keys():
+#     print(name.title())
+
+# Printing a message to a friend about their favorite programming language
 
 
-word = 'string'
-print("\n" + word.title() + ": " + glossary[word])
+favorite_languages = {
+       'jen': 'python',
+       'sarah': 'c',
+       'edward': 'ruby',
+       'phil': 'python',
+       }
+friends = ['phil','sarah']
+for name in sorted(favorite_languages.keys()):
+    print(name.title())
 
-word = 'comment'
-print("\n" + word.title() + ": " + glossary[word])
+    if name in friends:
+        print(" Hi " + name.title() + ", I see you love " +favorite_languages[name].title()+ "!")
 
-word = 'list'
-print("\n" + word.title() + ": " + glossary[word])
+if 'Erin' not in favorite_languages.keys():
+    print(" HI Erin, please take our survey")
 
-word = 'loop'
-print("\n" + word.title() + ": " + glossary[word])
 
-word = 'dictionary'
-print("\n" + word.title() + ": " + glossary[word])
+# Looping Through All Values in a Dictionary

@@ -127,3 +127,6 @@ if you want to get the sum of the numbers in your list use this sum()
 * A Boolean expression is just Another name for a conditional test.
 
 * Boolean values provides an efficient way to track the state of a program or a particular condition that is important in your program.
+
+                                    ## Ordinal numbers ##
+* Ordinal numebr includes their position in a list, such as 1st or 2nd. MOst ordinal end in th, except 1,2 and 3.

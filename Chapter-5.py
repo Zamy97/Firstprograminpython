@@ -218,15 +218,18 @@
 #         print("Sorry we don't have " + requested_topping + ".")
 
 
-# 5.8 (Hello Admin)
+# 5.8 (Hello Admin) + 5.9 (No users)
 
-usernames = ["Zamy97","admin","Fariha_Zaman","Bushra31","Tasnima_21"]
-
-for each_user in usernames:
-    if each_user == "admin":
-        print("Hello Admin! Would you like to see a status report?")
-    else:
-        print("Hello " + each_user + "! Thank you for logging back in again")
+# usernames = ["Zamy97","admin","Fariha_Zaman","Bushra31","Tasnima_21"]
+#
+# if usernames:
+#     for user in usernames:
+#         if user == "admin":
+#             print("Hello Admin! Would you like to see a status report?")
+#         else:
+#             print("Hello " + user + "! Thank you for logging back in again")
+# else:
+#     print(" We need more users! ")
 
 
 
@@ -241,4 +244,28 @@ for each_user in usernames:
 # print(number_list)
 
 
-# 5.9 (No Users)
+# 5.10 (Checking Usernames)
+
+# current_users = ["Bushra31","Fariha18","ZyanUK","Shakib75","Tamim99"]
+# new_users = ["Attractive", "Fariha18","Bristle", "Attractive","Sing","Bobourusis","Shakib75","BootTips"]
+#
+# current_user_lower = [user.lower() for user in current_users]
+#
+# for new_user in new_users:
+#     if new_user.lower() in current_user_lower:
+#         print("That "+ new_user + " name has been taken unfortunately! Choose another username pleas!")
+#     else:
+#         print("This username is available")
+
+
+# 5.11 (Ordinal Numbers)
+
+number_list = [1,2,3,4,5,6,7,8,9]
+for single_number in number_list:
+
+    if single_number <= 1:
+        print(str(single_number) + " st")
+    elif single_number <= 3:
+        print(str(single_number) + " rd")
+    else:
+        print(str(single_number) + " th")

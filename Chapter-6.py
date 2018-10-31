@@ -135,21 +135,81 @@
 # Printing a message to a friend about their favorite programming language
 
 
+# favorite_languages = {
+#        'jen': 'python',
+#        'sarah': 'c',
+#        'edward': 'ruby',
+#        'phil': 'python',
+#        }
+# friends = ['phil','sarah']
+# for name in sorted(favorite_languages.keys()):
+#     print(name.title())
+#
+#     if name in friends:
+#         print(" Hi " + name.title() + ", I see you love " +favorite_languages[name].title()+ "!")
+#
+# if 'Erin' not in favorite_languages.keys():
+#     print(" HI Erin, please take our survey")
+
+
+# Looping Through All Values in a Dictionary
+
+# for language in set(sorted(favorite_languages.values())):
+#     print(language.title())
+
+
+# 6.4 (Glossary-2)
+
+# glossary_1 = {
+#      'string': "A series of characters.",
+#      'comment': "A note in a program that the Python interpreter ignores.",
+#      'list': "A collection of items in a particular order.",
+#      'loop': "Work through a collection of items, one at a time.",
+#      'dictionary': "A collection of key-value pairs.",
+#      'built in function': "sometimes your best friedn would be the built in function"
+#      }
+#
+# for concept, description in glossary_1.items():
+#     print("\n" + concept.title()+ ": " + description.title())
+
+
+# 6.5 (Rivers)
+
+# rivers = {
+#     'nile':'egypt',
+#     'surma':'sylhet',
+#     'burigonga':'Dhaka',
+#     }
+#
+# for river, location in sorted(rivers.items()):
+#     print(river.title() + ": River run though "+ location.title() + ".")
+#
+#
+# for river in rivers.keys():
+#     print(river)
+#
+# for location in rivers.values():
+#     print(location)
+
+# 6.6 (Polling)
+
 favorite_languages = {
        'jen': 'python',
        'sarah': 'c',
        'edward': 'ruby',
        'phil': 'python',
+       'fariha':'swift',
+       'Bushra':'C++',
+       'Tamim':'Java'
        }
-friends = ['phil','sarah']
+
+
+friends_to_take_polls= ['Andrea','Andrew','Fang','faith','fariha','Tamim']
+
 for name in sorted(favorite_languages.keys()):
-    print(name.title())
+    # print(name.title())
 
-    if name in friends:
-        print(" Hi " + name.title() + ", I see you love " +favorite_languages[name].title()+ "!")
-
-if 'Erin' not in favorite_languages.keys():
-    print(" HI Erin, please take our survey")
-
-
-# Looping Through All Values in a Dictionary
+    if name in sorted(friends_to_take_polls):
+        print( "\n" + name.title() + ", Thank you for taking the poll! You are the best!")
+    else:
+        print("\n"+name.title()+ ", Could you please take the poll")

@@ -397,3 +397,19 @@ for name,places in favorite_places.items():
     print(name.title()+ "'s favorite places to visit are the following: ")
     for place in places:
         print("\t" + place.title())
+
+
+# 6.10 (Favorite numbers)
+
+favorite_number = {
+    'Andrew': [9,65,72,61,4,0,2,8,35,61,74],
+    'Aktar': [19,76,44,23,12,32,25,43,76],
+    'Andrea':[25,87,64,42,75,65,737,7254,9],
+    'Ashraf':[94,757,514261,428673,293746],
+    'Bushra':[15,864,297286,2468268,2479274],
+    }
+
+for name, number in favorite_number.items():
+    print(name.title() + "'s favorite numbers are the following: ")
+    for each_number in number:
+        print( "\t" + str(each_number))

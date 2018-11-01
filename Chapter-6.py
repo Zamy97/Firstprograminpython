@@ -271,41 +271,79 @@ aliens = []
 
 # USers have more than one favorite language now
 
-fav_languages = {
-     'jen': ['python', 'ruby'],
-     'sarah': ['c'],
-     'edward': ['ruby', 'go'],
-     'phil': ['python', 'haskell'],
-     }
-
-for name,languages in fav_languages.items():
-    print("\n" + name.title() + "'s favorite languages are: ")
-    for language in languages:
-        print("\t" + language.title())
+# fav_languages = {
+#      'jen': ['python', 'ruby'],
+#      'sarah': ['c'],
+#      'edward': ['ruby', 'go'],
+#      'phil': ['python', 'haskell'],
+#      }
+#
+# for name,languages in fav_languages.items():
+#     print("\n" + name.title() + "'s favorite languages are: ")
+#     for language in languages:
+#         print("\t" + language.title())
 
 
 
 
 # A dictionary in a dictionary
 
-users = {
-    'aeinstein':{
-    'first_name':'albert',
-    'last_name':'einstein',
-    'location':'princeton',
-    },
-    'mcurie': {
+# users = {
+#     'aeinstein':{
+#     'first_name':'albert',
+#     'last_name':'einstein',
+#     'location':'princeton',
+#     },
+#     'mcurie': {
+#
+#     'first_name': 'marie',
+#     'last_name': 'curie',
+#     'location': 'paris',
+#     },
+# }
+#
+# for username,user_info in users.items():
+#     print("\nUsername: "+username.title())
+#     user_full_name = user_info['first_name'] + " " + user_info['last_name']
+#     user_location = user_info['location']
+#
+#     print("\t Full name: " + user_full_name.title())
+#     print("\t Location: "+ user_location.title())
 
-    'first_name': 'marie',
-    'last_name': 'curie',
-    'location': 'paris',
-    },
+
+# 6.7 (People)
+
+people = []
+
+my_favorite_person = {
+    'first_name':'Fariha',
+    'last_name':'Zaman',
+    'age':18,
+    'city':'Warren',
+    'state':'Michigan.'
+    }
+people.append(my_favorite_person)
+my_favorite_person = {
+    'first_name':'Amina',
+    'last_name':'Bushar',
+    'age':21,
+    'city':'Paterson',
+    'state':'New Jersey.'
+    }
+people.append(my_favorite_person)
+my_favorite_person = {
+    'first_name':'Rahima',
+    'last_name':'Mahmood',
+    'age':65,
+    'city':'Paterson',
+    'state':'New Jersey.'
 }
+people.append(my_favorite_person)
 
-for username,user_info in users.items():
-    print("\nUsername: "+username.title())
-    user_full_name = user_info['first_name'] + " " + user_info['last_name']
-    user_location = user_info['location']
 
-    print("\t Full name: " + user_full_name.title())
-    print("\t Location: "+ user_location.title())
+
+for person in people:
+    name = person['first_name'].title() + " " + person['last_name'].title()
+    age = str(person['age'])
+    location = person['city'].title() + "," + person['state'].title()
+    print("My favorite person is " + name + " She is " + age + "years old, and she lives in" + location)

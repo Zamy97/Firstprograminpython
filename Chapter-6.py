@@ -346,4 +346,4 @@ for person in people:
     name = person['first_name'].title() + " " + person['last_name'].title()
     age = str(person['age'])
     location = person['city'].title() + "," + person['state'].title()
-    print("My favorite person is " + name + " She is " + age + "years old, and she lives in " + location)
+    print("My favorite person is " + name + " She is " + age + " years old, and she lives in " + location)

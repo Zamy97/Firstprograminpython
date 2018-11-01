@@ -193,23 +193,119 @@
 
 # 6.6 (Polling)
 
-favorite_languages = {
-       'jen': 'python',
-       'sarah': 'c',
-       'edward': 'ruby',
-       'phil': 'python',
-       'fariha':'swift',
-       'Bushra':'C++',
-       'Tamim':'Java'
-       }
+# favorite_languages = {
+#        'jen': 'python',
+#        'sarah': 'c',
+#        'edward': 'ruby',
+#        'phil': 'python',
+#        'fariha':'swift',
+#        'Bushra':'C++',
+#        'Tamim':'Java'
+#        }
+#
+#
+# friends_to_take_polls= ['Andrea','Andrew','Fang','faith','fariha','Tamim']
+#
+# for name in sorted(favorite_languages.keys()):
+#     # print(name.title())
+#
+#     if name in sorted(friends_to_take_polls):
+#         print( "\n" + name.title() + ", Thank you for taking the poll! You are the best!")
+#     else:
+#         print("\n"+name.title()+ ", Could you please take the poll")
 
 
-friends_to_take_polls= ['Andrea','Andrew','Fang','faith','fariha','Tamim']
+# A list of dictionaries
 
-for name in sorted(favorite_languages.keys()):
-    # print(name.title())
+# alien_6 = {'color':'green','points': 5}
+# alien_7 = {'color':'blue','points': 10}
+# alien_8 = {'color':'yellow','points': 15}
+#
+# aliens = [alien_6, alien_7,alien_8]
+#
+# for alien in aliens:
+#     print(alien)
 
-    if name in sorted(friends_to_take_polls):
-        print( "\n" + name.title() + ", Thank you for taking the poll! You are the best!")
-    else:
-        print("\n"+name.title()+ ", Could you please take the poll")
+
+# Make an empty list for sorting aliens.
+aliens = []
+
+# Make 30 green aliens
+# for alien in range(30):
+#     new_alien = {'color': 'yellow', 'points': 5, 'speed': 'slow'}
+#     aliens.append(new_alien)
+#
+# for alien in aliens[0:5]:
+#     if alien['color'] == 'green':
+#         alien['color'] = 'yellow'
+#         alien['points'] = 25
+#         alien['speed'] = 'medium'
+#     elif alien['color'] == 'yellow':
+#         alien['color'] = 'red'
+#         alien['points'] = 50
+#         alien['speed'] = 'fast'
+#
+# # SHow the first 5 aliens
+# for alien in aliens[:10]:
+#     print(alien)
+#     print("...")
+#
+# # Show the number of aliens that was created
+# print("Total number of aliens: "+str(len(aliens)))
+
+
+# A list in a dictionary
+
+# Store information about a pizza being ordered
+# pizza = {
+#     'crust':'thick',
+#     'toppings': ['mushrooms','extra cheese'],
+#     }
+#
+# # summerize the order
+# print(" you ordered a " + pizza['crust'] +" crust pizza with the followin toppings: ")
+#
+# for topping in pizza['toppings']:
+#     print("\t" + topping)
+
+
+# USers have more than one favorite language now
+
+fav_languages = {
+     'jen': ['python', 'ruby'],
+     'sarah': ['c'],
+     'edward': ['ruby', 'go'],
+     'phil': ['python', 'haskell'],
+     }
+
+for name,languages in fav_languages.items():
+    print("\n" + name.title() + "'s favorite languages are: ")
+    for language in languages:
+        print("\t" + language.title())
+
+
+
+
+# A dictionary in a dictionary
+
+users = {
+    'aeinstein':{
+    'first_name':'albert',
+    'last_name':'einstein',
+    'location':'princeton',
+    },
+    'mcurie': {
+
+    'first_name': 'marie',
+    'last_name': 'curie',
+    'location': 'paris',
+    },
+}
+
+for username,user_info in users.items():
+    print("\nUsername: "+username.title())
+    user_full_name = user_info['first_name'] + " " + user_info['last_name']
+    user_location = user_info['location']
+
+    print("\t Full name: " + user_full_name.title())
+    print("\t Location: "+ user_location.title())

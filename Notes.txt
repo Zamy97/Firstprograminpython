@@ -139,3 +139,11 @@ if you want to get the sum of the numbers in your list use this sum()
 
                                     ## Removing Key-Value Pairs ##
 * When you no longer need a piece of information that's stored in a dictionary, you can use the del statement to completely remove a key-value pair.
+
+
+                                                # Function #
+* When you want to perform a particular task that you have defined in a function, you call the name of the function responsible for it.
+
+* IF you need to perform that tasks multiple times throughout you don't need to type all the code for the same task again and again.
+
+* An argument is a piece of information that is passed from a function call to a function.

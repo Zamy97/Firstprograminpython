@@ -352,33 +352,48 @@ aliens = []
 
 # 6.8 (Pets)
 
-pets = []
+# pets = []
+#
+# my_dog = {
+#     'animal type':'Dog',
+#     'animal name':'Neilan',
+#     'owners name':'I',
+#     'weight': 30,
+#     }
+# pets.append(my_dog)
+#
+# bushras_cat = {
+#     'animal type':'Cat',
+#     'animal name':'box',
+#     'owners name':'Amina Bushra',
+#     'weight':15,
+#     }
+# pets.append(bushras_cat)
+# moms_bird = {
+#     'animal type':'Pigeon',
+#     'animal name':'flu',
+#     'owners name':'Rahima Mahmood',
+#     'weight': 5,
+#     }
+# pets.append(moms_bird)
+#
+# for pet in pets:
+#     kind_of_animal = pet['animal type']
+#     animal_name = pet['animal name']
+#     animal_owner = pet['owners name']
+#     animal_weight = pet['weight']
+#     print(animal_owner.title() + " own a " + kind_of_animal.title()+ " and the name of the " + kind_of_animal.title() + " is "+  animal_name.title() + "." + " The " + kind_of_animal.title() + " weights about " + str(animal_weight) +  " pounds .")
 
-my_dog = {
-    'animal type':'Dog',
-    'animal name':'Neilan',
-    'owners name':'I',
-    'weight': 30,
-    }
-pets.append(my_dog)
 
-bushras_cat = {
-    'animal type':'a cute cat',
-    'animal name':'box',
-    'owners name':'Amina Bushra',
-    'weight':15,
-    }
-pets.append(bushras_cat)
-moms_bird = {
-    'animal type':'Pigeon',
-    'animal name':'flu',
-    'owners name':'Rahima Mahmood',
-    'weight': 5,
-    }
-pets.append(moms_bird)
+# 6.9 (Favorite Places)
 
-for pet in pets:
-    kind_of_animal = pet['animal type']
-    animal_name = pet['animal name']
-    animal_owner = pet['owners name']
-    print(animal_owner.title() + " own a " + kind_of_animal.title()+ " and the name of the " + kind_of_animal.title() + " is "+  animal_name.title() + ".")
+favorite_places = {
+    'fariha': ['california','Warren','New York'],
+    'aktar':['New Jersey','Detroit','canada'],
+    'bushra':['Bangladesh','Atlanta','Boston']
+    }
+# What this line does it loops thru the keys and the values in the dictionary and saves them in name and place
+for name,places in favorite_places.items():
+    print(name.title()+ "'s favorite places to visit are the following: ")
+    for place in places:
+        print("\t" + place.title())

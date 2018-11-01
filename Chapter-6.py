@@ -313,37 +313,72 @@ aliens = []
 
 # 6.7 (People)
 
-people = []
+# people = []
+#
+# my_favorite_person = {
+#     'first_name':'Fariha',
+#     'last_name':'Zaman',
+#     'age':18,
+#     'city':'Warren',
+#     'state':'Michigan.'
+#     }
+# people.append(my_favorite_person)
+# my_favorite_person = {
+#     'first_name':'Amina',
+#     'last_name':'Bushar',
+#     'age':21,
+#     'city':'Paterson',
+#     'state':'New Jersey.'
+#     }
+# people.append(my_favorite_person)
+# my_favorite_person = {
+#     'first_name':'Rahima',
+#     'last_name':'Mahmood',
+#     'age':65,
+#     'city':'Paterson',
+#     'state':'New Jersey.'
+# }
+# people.append(my_favorite_person)
+#
+#
+#
+# for person in people:
+#     name = person['first_name'].title() + " " + person['last_name'].title()+ "."
+#     age = str(person['age'])
+#     location = person['city'].title() + "," + person['state'].title()
+#     print("My favorite person is " + name + " She is " + age + " years old, and she lives in " + location)
 
-my_favorite_person = {
-    'first_name':'Fariha',
-    'last_name':'Zaman',
-    'age':18,
-    'city':'Warren',
-    'state':'Michigan.'
+
+
+# 6.8 (Pets)
+
+pets = []
+
+my_dog = {
+    'animal type':'Dog',
+    'animal name':'Neilan',
+    'owners name':'I',
+    'weight': 30,
     }
-people.append(my_favorite_person)
-my_favorite_person = {
-    'first_name':'Amina',
-    'last_name':'Bushar',
-    'age':21,
-    'city':'Paterson',
-    'state':'New Jersey.'
+pets.append(my_dog)
+
+bushras_cat = {
+    'animal type':'a cute cat',
+    'animal name':'box',
+    'owners name':'Amina Bushra',
+    'weight':15,
     }
-people.append(my_favorite_person)
-my_favorite_person = {
-    'first_name':'Rahima',
-    'last_name':'Mahmood',
-    'age':65,
-    'city':'Paterson',
-    'state':'New Jersey.'
-}
-people.append(my_favorite_person)
+pets.append(bushras_cat)
+moms_bird = {
+    'animal type':'Pigeon',
+    'animal name':'flu',
+    'owners name':'Rahima Mahmood',
+    'weight': 5,
+    }
+pets.append(moms_bird)
 
-
-
-for person in people:
-    name = person['first_name'].title() + " " + person['last_name'].title()+ "."
-    age = str(person['age'])
-    location = person['city'].title() + "," + person['state'].title()
-    print("My favorite person is " + name + " She is " + age + " years old, and she lives in " + location)
+for pet in pets:
+    kind_of_animal = pet['animal type']
+    animal_name = pet['animal name']
+    animal_owner = pet['owners name']
+    print(animal_owner.title() + " own a " + kind_of_animal.title()+ " and the name of the " + kind_of_animal.title() + " is "+  animal_name.title() + ".")

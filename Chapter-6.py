@@ -387,29 +387,52 @@ aliens = []
 
 # 6.9 (Favorite Places)
 
-favorite_places = {
-    'fariha': ['california','Warren','New York'],
-    'aktar':['New Jersey','Detroit','canada'],
-    'bushra':['Bangladesh','Atlanta','Boston']
-    }
-# What this line does it loops thru the keys and the values in the dictionary and saves them in name and place
-for name,places in favorite_places.items():
-    print(name.title()+ "'s favorite places to visit are the following: ")
-    for place in places:
-        print("\t" + place.title())
+# favorite_places = {
+#     'fariha': ['california','Warren','New York'],
+#     'aktar':['New Jersey','Detroit','canada'],
+#     'bushra':['Bangladesh','Atlanta','Boston']
+#     }
+# # What this line does it loops thru the keys and the values in the dictionary and saves them in name and place
+# for name,places in favorite_places.items():
+#     print(name.title()+ "'s favorite places to visit are the following: ")
+#     for place in places:
+#         print("\t" + place.title())
 
 
 # 6.10 (Favorite numbers)
 
-favorite_number = {
-    'Andrew': [9,65,72,61,4,0,2,8,35,61,74],
-    'Aktar': [19,76,44,23,12,32,25,43,76],
-    'Andrea':[25,87,64,42,75,65,737,7254,9],
-    'Ashraf':[94,757,514261,428673,293746],
-    'Bushra':[15,864,297286,2468268,2479274],
-    }
+# favorite_number = {
+#     'Andrew': [9,65,72,61,4,0,2,8,35,61,74],
+#     'Aktar': [19,76,44,23,12,32,25,43,76],
+#     'Andrea':[25,87,64,42,75,65,737,7254,9],
+#     'Ashraf':[94,757,514261,428673,293746],
+#     'Bushra':[15,864,297286,2468268,2479274],
+#     }
+#
+# for name, number in favorite_number.items():
+#     print(name.title() + "'s favorite numbers are the following: ")
+#     for each_number in number:
+#         print( "\t" + str(each_number))
 
-for name, number in favorite_number.items():
-    print(name.title() + "'s favorite numbers are the following: ")
-    for each_number in number:
-        print( "\t" + str(each_number))
+# 6.11 (cities)
+
+cities = {
+    'Sylhet': {
+        'country':'Bangladesh',
+        'population':'1 million',
+        'fact':'its one of the most beautiful city in Bangladesh',
+        },
+
+    'berkeley':{
+        'country':'America',
+        'population':'50k',
+        'fact':'its one of the most comfotable place that I have ever lived in'
+        }
+}
+
+for city,city_info in cities.items():
+    print("A little bit about the City of: " + city.title() + "!")
+    country_name = city_info['country']
+    city_population = city_info['population']
+    fact_about_city = city_info['fact']
+    print("\n"+city.title() + " is located in " + country_name.title() + "and it has a population of about " + city_population + " and one cool thing about it is that " + fact_about_city+ ".")

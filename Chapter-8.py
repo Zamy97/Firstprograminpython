@@ -49,10 +49,18 @@
 
 # 8.4(Large Shirts)
 
-def make_shirts_here(shirt_size = "L",message_on_the_shirt = "I love Python."):
-    print("You order a " + shirt_size.upper() + " size shirt. And the message on the shirt will be: " + message_on_the_shirt)
-
-make_shirts_here()
-make_shirts_here("M")
+# def make_shirts_here(shirt_size = "L",message_on_the_shirt = "I love Python."):
+#     print("You order a " + shirt_size.upper() + " size shirt. And the message on the shirt will be: " + message_on_the_shirt)
+#
+# make_shirts_here()
+# make_shirts_here("M")
 
 # 8.5 (cities)
+
+def describe_cities(city_name,country_name = "Bangladesh."):
+    print(city_name.title() + " city is located in " + country_name.title())
+
+
+describe_cities("Sylhet")
+describe_cities("Berlin")
+describe_cities("Dhaka")

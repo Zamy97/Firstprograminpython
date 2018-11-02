@@ -57,10 +57,37 @@
 
 # 8.5 (cities)
 
-def describe_cities(city_name,country_name = "Bangladesh."):
-    print(city_name.title() + " city is located in " + country_name.title())
+# def describe_cities(city_name,country_name = "Bangladesh."):
+#     print(city_name.title() + " city is located in " + country_name.title())
+#
+#
+# describe_cities("Sylhet")
+# describe_cities("Berlin")
+# describe_cities("Dhaka")
 
 
-describe_cities("Sylhet")
-describe_cities("Berlin")
-describe_cities("Dhaka")
+# Returning a simple value
+
+# def get_formatted_name(first_name,last_name):
+#     '''Return a full name, neatly formatted'''
+#     full_name = first_name + " " + last_name
+#     return full_name.title()
+#
+# her_full_name = get_formatted_name("Fariha","Zaman.")
+# print(her_full_name)
+
+
+# Making an argument optional
+
+def get_full_name(first_name, last_name, middle_name=""):
+    '''Return full name clearly"'''
+    if middle_name:
+        full_name = first_name + " " + middle_name + " " +last_name
+    else:
+        full_name = first_name + " " + last_name
+    return full_name.title()
+
+my_full_name = get_full_name("Aktar","Zaman")
+print(my_full_name)
+my_full_name = get_full_name("Aktar","Zaman","Uz")
+print(my_full_name)

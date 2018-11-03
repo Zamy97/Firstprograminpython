@@ -107,16 +107,58 @@
 
 # making a person and their details
 
-def person_details(first_name,last_name,age=""):
+# def person_details(first_name,last_name,age=""):
+#
+#     person = {
+#         'first':first_name,
+#         'last':last_name
+#         }
+#     if age:
+#         person['age'] = age
+#     return person
+# persons_name = person_details("Aktar","Zaman",21)
+# print(persons_name)
 
-    person = {
-        'first':first_name,
-        'last':last_name
-        }
-    if age:
-        person['age'] = age
-    return person
-persons_name = person_details("Aktar","Zaman",21)
-print(persons_name)
+# Function with a while Loop on page - 145
 
-# Start from Using a Function with a while Loop on page - 145
+# def get_formatted_name(first_name,last_name):
+#     full_name = first_name + ' ' + last_name
+#     return full_name
+#
+#     # This is an infinite loop
+# while True:
+#     print("Enter q at any time to quit the program!")
+#     f_name = input("What is your first name: ")
+#     if f_name == 'q':
+#         break
+#
+#     l_name = input("What's your last name: ")
+#     if l_name == 'q':
+#         break
+#
+#     asta_nam = get_formatted_name(f_name,l_name)
+#     print("\nHello, "+ asta_nam + "!")
+#     break
+
+# 8.6 (City Names)
+
+def city_country(city_name,country_name):
+    city_and_country = city_name + " " + country_name
+
+    return city_and_country
+
+while True:
+    print("Tell me a name of a city and which country and i'll put it together for you lol!")
+    print("You can exit the program by entering q")
+
+    city_name_input = input("Type a city name: ")
+    if city_name_input == 'q':
+        break
+
+    country_name_input = input("Which country is that in: ")
+    if country_name_input == 'q':
+        break
+
+    name_of_the_city_and_country = city_country(city_name_input,country_name_input)
+    print("\n"+ city_name_input.title() + " is located in " + country_name_input.title() + "!")
+    exit()

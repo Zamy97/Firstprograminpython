@@ -142,23 +142,56 @@
 
 # 8.6 (City Names)
 
-def city_country(city_name,country_name):
-    city_and_country = city_name + " " + country_name
+# def city_country(city_name,country_name):
+#     city_and_country = city_name + " " + country_name
+#
+#     return city_and_country
+#
+# while True:
+#     print("Tell me a name of a city and which country and i'll put it together for you lol!")
+#     print("You can exit the program by entering q")
+#
+#     city_name_input = input("Type a city name: ")
+#     if city_name_input == 'q':
+#         break
+#
+#     country_name_input = input("Which country is that in: ")
+#     if country_name_input == 'q':
+#         break
+#
+#     name_of_the_city_and_country = city_country(city_name_input,country_name_input)
+#     print("\n"+ city_name_input.title() + " is located in " + country_name_input.title() + "!")
+#     exit()
 
-    return city_and_country
 
-while True:
-    print("Tell me a name of a city and which country and i'll put it together for you lol!")
-    print("You can exit the program by entering q")
+# 8.7 (Album)
 
-    city_name_input = input("Type a city name: ")
-    if city_name_input == 'q':
-        break
+def make_album(artist_name, album_title):
+    artist_info = {
+        'artist name':artist_name,
+        'artist album':album_title
+        }
+    return artist_info
 
-    country_name_input = input("Which country is that in: ")
-    if country_name_input == 'q':
-        break
+first_artist = make_album("Cardi B", "Invasion of privacy",)
+print(first_artist)
 
-    name_of_the_city_and_country = city_country(city_name_input,country_name_input)
-    print("\n"+ city_name_input.title() + " is located in " + country_name_input.title() + "!")
-    exit()
+second_artist = make_album("J cole","Jumping")
+print(second_artist)
+
+third_album = make_album("Aktar","Help Immigrants")
+print(third_album)
+
+# make albums with tracks
+
+def album_with_tracks(name_artist,album_name, tracks = ""):
+    info_artist = {
+        'artist name': name_artist,
+        'artist album':album_name,
+        }
+    if tracks:
+        info_artist['tracks'] = tracks
+    return info_artist
+
+info = album_with_tracks("Fariha","jingo",9)
+print(info)

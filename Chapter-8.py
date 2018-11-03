@@ -166,32 +166,53 @@
 
 # 8.7 (Album)
 
-def make_album(artist_name, album_title):
-    artist_info = {
-        'artist name':artist_name,
-        'artist album':album_title
-        }
-    return artist_info
+# def make_album(artist_name, album_title):
+#     artist_info = {
+#         'artist name':artist_name,
+#         'artist album':album_title
+#         }
+#     return artist_info
+#
+# first_artist = make_album("Cardi B", "Invasion of privacy",)
+# print(first_artist)
+#
+# second_artist = make_album("J cole","Jumping")
+# print(second_artist)
+#
+# third_album = make_album("Aktar","Help Immigrants")
+# print(third_album)
+#
+# # make albums with tracks
+#
+# def album_with_tracks(name_artist,album_name, tracks = ""):
+#     info_artist = {
+#         'artist name': name_artist,
+#         'artist album':album_name,
+#         }
+#     if tracks:
+#         info_artist['tracks'] = tracks
+#     return info_artist
+#
+# info = album_with_tracks("Fariha","jingo",9)
+# print(info)
 
-first_artist = make_album("Cardi B", "Invasion of privacy",)
-print(first_artist)
+# 8.8 (User albums)
 
-second_artist = make_album("J cole","Jumping")
-print(second_artist)
+def user_name_album(singer_name, album_name):
+    user_input_artist_info = singer_name + " " + album_name
 
-third_album = make_album("Aktar","Help Immigrants")
-print(third_album)
+    return user_input_artist_info
 
-# make albums with tracks
+while True:
+    print("you can exit the program by entering q")
+    artist_name_input = input("Who is your favorite artist? ")
+    if artist_name_input == 'q':
+        quit()
 
-def album_with_tracks(name_artist,album_name, tracks = ""):
-    info_artist = {
-        'artist name': name_artist,
-        'artist album':album_name,
-        }
-    if tracks:
-        info_artist['tracks'] = tracks
-    return info_artist
+    album_name_input = input("What's your favorite album of " + artist_name_input.title() +": ")
+    if album_name_input == 'q':
+        quit()
 
-info = album_with_tracks("Fariha","jingo",9)
-print(info)
+    info_of_artist = user_name_album(artist_name_input,album_name_input)
+    print( "Your favorite artist is " + artist_name_input + ", and you love " + artist_name_input.title() + "'s"+ album_name_input + " album much.")
+    break

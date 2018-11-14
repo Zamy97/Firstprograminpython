@@ -198,21 +198,97 @@
 
 # 8.8 (User albums)
 
-def user_name_album(singer_name, album_name):
-    user_input_artist_info = singer_name + " " + album_name
+# def user_name_album(singer_name, album_name):
+#     user_input_artist_info = singer_name + " " + album_name
+#
+#     return user_input_artist_info
+#
+# while True:
+#     print("you can exit the program by entering q")
+#     artist_name_input = input("Who is your favorite artist? ")
+#     if artist_name_input == 'q':
+#         quit()
+#
+#     album_name_input = input("What's your favorite album of " + artist_name_input.title() +": ")
+#     if album_name_input == 'q':
+#         quit()
+#
+#     info_of_artist = user_name_album(artist_name_input,album_name_input)
+#     print( "Your favorite artist is " + artist_name_input + ", and you love " + artist_name_input.title() + "'s"+ album_name_input + " album much.")
+#     break
+#
 
-    return user_input_artist_info
 
-while True:
-    print("you can exit the program by entering q")
-    artist_name_input = input("Who is your favorite artist? ")
-    if artist_name_input == 'q':
-        quit()
+# Passing a list to a function
 
-    album_name_input = input("What's your favorite album of " + artist_name_input.title() +": ")
-    if album_name_input == 'q':
-        quit()
 
-    info_of_artist = user_name_album(artist_name_input,album_name_input)
-    print( "Your favorite artist is " + artist_name_input + ", and you love " + artist_name_input.title() + "'s"+ album_name_input + " album much.")
-    break
+
+
+# def greet_users(names):
+#     """ print a simple greeting to each user in the list"""
+#     for name in names:
+#         msg = " Hello, " + name.title() + "!"
+#         print(msg)
+# usernames = ["Aktar", "Fariha", "Tasnima"]
+# greet_users(usernames)
+#
+
+
+# Modifying the list in a function
+
+# def print_models(unprinted_designs, completed_models):
+#     """
+#      Simulate printing each design, until none are left.
+#      Move each design to completed_models after printing.
+#     """
+#
+#     while unprinted_designs:
+#         current_design = unprinted_designs.pop()
+#
+#         # Simulate creating a 3d print from the design.
+#         print("Printing model: " + current_design)
+#         completed_models.append(current_design)
+#
+# def show_completed_models(completed_models):
+#     """Show all the models that were printed"""
+#     print("\nThe following models have been printed:")
+#     for completed_model in completed_models:
+#         print(completed_model)
+#
+# unprinted_designs = ['iphone case', 'robot pendant', 'dodecahedron']
+# completed_models = []
+#
+# print_models(unprinted_designs, completed_models)
+# show_completed_models(completed_models)
+
+# 8.9 (Magicians)
+
+def show_magician(magician_names):
+    """Print the name of each magician in the list."""
+    for magician_name in magician_names:
+        print("Hello, "+ magician_name + "!")
+
+# magician_names = ["Fariha", "Aktar", "Bushra", "Tasnima", "Tamim", "Aminul"]
+# show_magician(magician_names)
+
+def make_great(magician_names):
+    """Add 'the Great!' to each magician's name."""
+    great_magicians = []
+
+    # Make each magician great, and add it to great_magicians.
+    while magician_names:
+        magician = magician_names.pop()
+        great_magician = magician + ' You are amazing'
+        great_magicians.append(great_magician)
+
+    # Add the great magicians back into magicians.
+    for great_magician in great_magicians:
+        magician_names.append(great_magician)
+
+magician_names = ["Fariha", "Aktar", "Bushra", "Tasnima", "Tamim", "Aminul"]
+show_magician(magician_names)
+
+print("\n")
+
+make_great(magician_names)
+show_magician(magician_names)

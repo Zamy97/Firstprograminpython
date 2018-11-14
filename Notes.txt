@@ -153,3 +153,7 @@ if you want to get the sum of the numbers in your list use this sum()
 * When you use default values, any parameter with default values needs to be listed after all the parameters that don't have default values. This allows python to continue interpreting Positional arguments correctly.
 
 * Unmatched argument happens when you provide fewer or more arguments than a function needs to do it's work!
+
+* This example also demonstrates the idea that every function should have one specific job.
+
+* If you are writing a function and notice the function is doing too many different tasks, try to split the code into two or more functions.

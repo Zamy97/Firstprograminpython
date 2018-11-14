@@ -157,3 +157,5 @@ if you want to get the sum of the numbers in your list use this sum()
 * This example also demonstrates the idea that every function should have one specific job.
 
 * If you are writing a function and notice the function is doing too many different tasks, try to split the code into two or more functions.
+
+* If you want your function to accept several different kinds of arguments, the paramater that accepts an arbitrary number of arguments must be placed last in the function definition. 

@@ -271,24 +271,95 @@ def show_magician(magician_names):
 # magician_names = ["Fariha", "Aktar", "Bushra", "Tasnima", "Tamim", "Aminul"]
 # show_magician(magician_names)
 
-def make_great(magician_names):
-    """Add 'the Great!' to each magician's name."""
-    great_magicians = []
+# def make_great(magician_names):
+#     """Add 'the Great!' to each magician's name."""
+#     great_magicians = []
+#
+#     # Make each magician great, and add it to great_magicians.
+#     while magician_names:
+#         magician = magician_names.pop()
+#         great_magician = magician + ' You are amazing'
+#         great_magicians.append(great_magician)
+#
+#     # Add the great magicians back into magicians.
+#     for great_magician in great_magicians:
+#         magician_names.append(great_magician)
+#
+#     return magician_names
+#
+# magician_names = ["Fariha", "Aktar", "Bushra", "Tasnima", "Tamim", "Aminul"]
+# show_magician(magician_names)
+# print("\n")
+#
+# # Magicians with the greeting
+# make_great(magician_names)
+#
+# print("\n The original magician names")
+# show_magician(magician_names)
 
-    # Make each magician great, and add it to great_magicians.
-    while magician_names:
-        magician = magician_names.pop()
-        great_magician = magician + ' You are amazing'
-        great_magicians.append(great_magician)
 
-    # Add the great magicians back into magicians.
-    for great_magician in great_magicians:
-        magician_names.append(great_magician)
+# 8.11
 
-magician_names = ["Fariha", "Aktar", "Bushra", "Tasnima", "Tamim", "Aminul"]
-show_magician(magician_names)
+# def show_magicians(magicians):
+#     """Print the name of each magician in the list."""
+#     for magician in magicians:
+#         print(magician)
+#
+# def make_great(magicians):
+#     """Add 'the Great!' to each magician's name."""
+#     # Build a new list to hold the great musicians.
+#     great_magicians = []
+#
+#     # Make each magician great, and add it to great_magicians.
+#     while magicians:
+#         magician = magicians.pop()
+#         great_magician = magician + ' the Great'
+#         great_magicians.append(great_magician)
+#
+#     # Add the great magicians back into magicians.
+#     for great_magician in great_magicians:
+#         magicians.append(great_magician)
+#
+#     return magicians
+#
+# magicians = ['Harry Houdini', 'David Blaine', 'Teller']
+# show_magicians(magicians)
+#
+# print("\nGreat magicians:")
+# great_magicians = make_great(magicians[:])
+# show_magicians(great_magicians)
+#
+# print("\nOriginal magicians:")
+# show_magicians(magicians)
 
-print("\n")
+# Passing an arbtriry number of arguments in your function
 
-make_great(magician_names)
-show_magician(magician_names)
+# def make_pizza(*toppings):
+#     """print the list of toppings that have been requested"""
+#     print(toppings)
+#
+# make_pizza("Mushrooms")
+# make_pizza("Cheese", "green Peppers", "extra cheese")
+
+# Making a pizza
+
+# def make_pizza(*toppings):
+#     """Summerize the pizza we are making"""
+#     print("\n Making a pizza with the following toppings: ")
+#     for topping in toppings:
+#         print("- " + topping)
+# make_pizza("Mushrooms")
+# make_pizza("Cheese", "green Peppers", "extra cheese")
+
+# passing in different types of parameters in your function
+
+def making_pizza(size, *toppings):
+
+    print("\nMaking a " + str(size) +
+            "-inch pizza with the following toppings:")
+    for topping in toppings:
+        print("- " + topping)
+
+
+making_pizza(16, "mushrooms")
+making_pizza(12, 'mushrooms', 'green peppers','extra cheese')

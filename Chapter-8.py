@@ -1,3 +1,4 @@
+import print_models
 # A Simple function
 # def greet_user(username):
 #     """Display a simple greeeting."""
@@ -364,4 +365,8 @@ def making_pizza(size, *toppings):
 making_pizza(16, "mushrooms")
 making_pizza(12, 'mushrooms', 'green peppers','extra cheese')
 
-# Start from Using arbritry keywords arguments
+# 8.15 (Printing Models)
+# Imported a file at the very top of this file
+
+# 8.16(Different imports)
+print_models.greet_user("Fariha")

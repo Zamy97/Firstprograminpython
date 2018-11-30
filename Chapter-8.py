@@ -1,4 +1,8 @@
-import print_models
+import printing_models
+from printing_models import display_message
+from printing_models import display_message as message
+import printing_models as testing
+from printing_models import *
 # A Simple function
 # def greet_user(username):
 #     """Display a simple greeeting."""
@@ -264,10 +268,10 @@ import print_models
 
 # 8.9 (Magicians)
 
-def show_magician(magician_names):
-    """Print the name of each magician in the list."""
-    for magician_name in magician_names:
-        print("Hello, "+ magician_name + "!")
+# def show_magician(magician_names):
+#     """Print the name of each magician in the list."""
+#     for magician_name in magician_names:
+#         print("Hello, "+ magician_name + "!")
 
 # magician_names = ["Fariha", "Aktar", "Bushra", "Tasnima", "Tamim", "Aminul"]
 # show_magician(magician_names)
@@ -354,19 +358,30 @@ def show_magician(magician_names):
 
 # passing in different types of parameters in your function
 
-def making_pizza(size, *toppings):
-
-    print("\nMaking a " + str(size) +
-            "-inch pizza with the following toppings:")
-    for topping in toppings:
-        print("- " + topping)
-
-
-making_pizza(16, "mushrooms")
-making_pizza(12, 'mushrooms', 'green peppers','extra cheese')
+# def making_pizza(size, *toppings):
+#
+#     print("\nMaking a " + str(size) +
+#             "-inch pizza with the following toppings:")
+#     for topping in toppings:
+#         print("- " + topping)
+#
+#
+# making_pizza(16, "mushrooms")
+# making_pizza(12, 'mushrooms', 'green peppers','extra cheese')
 
 # 8.15 (Printing Models)
 # Imported a file at the very top of this file
 
 # 8.16(Different imports)
-print_models.greet_user("Fariha")
+
+# Using the entire module import
+# printing_models.greet_user("Fariha")
+
+#importing functions from a module
+# display_message()
+# import function as an aias meaning that importing function as a certain name
+# message()
+# import the whole module as an alias
+testing.display_message()
+# importing all the function from the module
+favorite_book("Python Crash Course")

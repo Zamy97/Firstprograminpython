@@ -47,3 +47,7 @@ print("MY favorite restaurant is " + restaurant_details.name.title())
 print("It a " + restaurant_details.type.title() + " type of restaurant")
 restaurant_details.describe_reasturant()
 restaurant_details.open_restaurant()
+
+# 9.2 (Three Restaurant)
+first_instance = Restaurant("Aangan", "South East Asian Food")
+first_artist.restaurant_details()

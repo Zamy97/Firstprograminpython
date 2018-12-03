@@ -76,3 +76,5 @@ class User():
 user1 = User("Aktar", "Zaman")
 user1.describe_user()
 user1.greet_user()
+
+# Car class

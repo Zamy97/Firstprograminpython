@@ -54,3 +54,5 @@ first_instance.describe_reasturant()
 
 second_instance = Restaurant("In n out", "Fast ")
 second_instance.describe_reasturant()
+
+third_instance = Restaurant("Somethign", "something")

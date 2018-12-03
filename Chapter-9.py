@@ -51,3 +51,5 @@ restaurant_details.open_restaurant()
 # 9.2 (Three Restaurant)
 first_instance = Restaurant("Aangan", "South East Asian Food")
 first_artist.restaurant_details()
+
+second_instance = Restaurant("In n out", "Fast ")

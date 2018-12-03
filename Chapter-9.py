@@ -1,19 +1,49 @@
-class Dog():
-    """ A simple dog class"""
+# class Dog():
+#     """ A simple dog class"""
+#
+#     def __init__(self, name, age):
+#         """Initialize name and age attribute"""
+#         self.name = name
+#         self.age = age
+#
+#     def sit(self):
+#         """Dog sitting function"""
+#         print(self.name.title() + " is now siting down.")
+#
+#     def roll_over(self):
+#         """Dog rolling over function"""
+#         print(self.name.title() + " is now rolling over.")
+#
+# my_dog = Dog('Bella', 11)
+# your_dog = Dog('lucy', 7)
+# print("Our dog's name is " + my_dog.name.title() + ".")
+# print("Our dog is " + str(my_dog.age) + " years old.")
+# my_dog.sit()
+# my_dog.roll_over()
+#
+# print("\nYour dog's name is " + your_dog.name.title()+ "." + your_dog.name.title()+ "is " + str(your_dog.age) + "years old")
+# your_dog.sit()
+# your_dog.roll_over()
 
-    def __init__(self, name, age):
-        """Initialize name and age attribute"""
-        self.name = name
-        self.age = age
+# 9.1 ( Reasturant)
 
-    def sit(self):
-        """Dog sitting function"""
-        print(self.name.title() + "is now siting down")
+class Restaurant():
 
-    def roll_over(self):
-        """Dog rolling over function"""
-        print(self.name.title() + "is now rolling over")
+    def __init__(self, restaurant_name, cusine_type):
+        """ basic info about reasturnat"""
+        self.name = restaurant_name
+        self.type = cusine_type
 
-my_dog = Dog('Bella', 11)
-print("Our dog's name is " + my_dog.name.title())
-print("Our dog is " + str(my_dog.age) + " years old")
+    def describe_reasturant(self):
+        """ Function that decribe reasturant"""
+        print("The name of this special reasturnat is " + self.name.title() + ". And it's a " + self.type + " type of reasturant")
+
+    def open_restaurant(self):
+        """ Shows if the restaurant is open or not"""
+        print("The restaurant is open 24/7/365")
+
+restaurant_details = Restaurant("Lesu Mia's Restaurant", "Street food")
+print("MY favorite restaurant is " + restaurant_details.name.title())
+print("It a " + restaurant_details.type.title() + " type of restaurant")
+restaurant_details.describe_reasturant()
+restaurant_details.open_restaurant()

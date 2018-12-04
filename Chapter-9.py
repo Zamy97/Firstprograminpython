@@ -79,42 +79,42 @@
 
 # Car class
 
-class Car():
-
-    def __init__(self, make, model, year):
-        self.make = make
-        self.model= model
-        self.year = year
-        self.odometer_reading = 0
-
-    def get_desctiptive_name(self):
-        """Return a neatly formatted descriptive name"""
-        long_name = str(self.year) + ' ' + self.make + ' '+self.model
-        return long_name.title()
-
-    def read_odometer(self):
-        """print a statement showing the car's milege"""
-        print("This car has " +str(self.odometer_reading) + " miles on it.")
-
-    def update_odometer(self, mileage):
-        """
-        set the odometer reading to given valueself.
-
-        Reject the change if it attempts to roll the odometer back.
-
-        """
-
-        if mileage >= self.odometer_reading:
-            self.odometer_reading = mileage
-        else:
-            print("Cmo'n man! Y u trying to lie to me")
-
-    def increment_odometer(self, miles):
-        """add the given amount to the odometer"""
-        if miles >= self.odometer_reading:
-            self.odometer_reading += miles
-        else:
-            print("Get a life")
+# class Car():
+#
+#     def __init__(self, make, model, year):
+#         self.make = make
+#         self.model= model
+#         self.year = year
+#         self.odometer_reading = 0
+#
+#     def get_desctiptive_name(self):
+#         """Return a neatly formatted descriptive name"""
+#         long_name = str(self.year) + ' ' + self.make + ' '+self.model
+#         return long_name.title()
+#
+#     def read_odometer(self):
+#         """print a statement showing the car's milege"""
+#         print("This car has " +str(self.odometer_reading) + " miles on it.")
+#
+#     def update_odometer(self, mileage):
+#         """
+#         set the odometer reading to given valueself.
+#
+#         Reject the change if it attempts to roll the odometer back.
+#
+#         """
+#
+#         if mileage >= self.odometer_reading:
+#             self.odometer_reading = mileage
+#         else:
+#             print("Cmo'n man! Y u trying to lie to me")
+#
+#     def increment_odometer(self, miles):
+#         """add the given amount to the odometer"""
+#         if miles >= self.odometer_reading:
+#             self.odometer_reading += miles
+#         else:
+#             print("Get a life")
 
 # my_new_car = Car('Scion', 'FRS', 2017)
 # print(my_new_car.get_desctiptive_name())
@@ -126,49 +126,84 @@ class Car():
 # my_new_car.update_odometer(65)
 # my_new_car.read_odometer()
 
-my_used_car = Car("Subaru", "sports", 2013)
-print(my_used_car.get_desctiptive_name())
-
-my_used_car.update_odometer(17800)
-my_used_car.read_odometer()
-
-my_used_car.increment_odometer(-20000)
-my_used_car.read_odometer()
+# my_used_car = Car("Subaru", "sports", 2013)
+# print(my_used_car.get_desctiptive_name())
+#
+# my_used_car.update_odometer(17800)
+# my_used_car.read_odometer()
+#
+# my_used_car.increment_odometer(-20000)
+# my_used_car.read_odometer()
 
 # 9.4 (Number Served)
 
-class Restaurant():
+# class Restaurant():
+#
+#     def __init__(self, restaurant_name, cusine_type):
+#         """ basic info about reasturnat"""
+#         self.name = restaurant_name
+#         self.type = cusine_type
+#         self.number_served = 0
+#
+#     def describe_reasturant(self):
+#         """ Function that decribe reasturant"""
+#         print("The name of this special reasturnat is " + self.name.title() + ". And it's a " + self.type + " type of reasturant")
+#
+#     def open_restaurant(self):
+#         """ Shows if the restaurant is open or not"""
+#         print("The restaurant is open 24/7/365")
+#
+#     def set_number(self, number):
+#         """let's you set a number of people is being served"""
+#         self.number_served = number
+#     def increment_number(self, number):
+#         if number >= self.number_served:
+#             self.number_served += number
+#         else:
+#             print("Type a bigger number")
+#
+# restaurant_details = Restaurant("Lesu Mia's Restaurant", "Street food")
+# print(restaurant_details.name + " has served about " + str(restaurant_details.number_served) + " People")
+# restaurant_details.number_served = 500
+# print(restaurant_details.name + " has served about " + str(restaurant_details.number_served) + " People")
+#
+# restaurant_details.set_number(9)
+# print(restaurant_details.name + " has served about " + str(restaurant_details.number_served) + " People")
+#
+# restaurant_details.increment_number(499)
+# print(restaurant_details.name + " has served about " + str(restaurant_details.number_served) + " People")
 
-    def __init__(self, restaurant_name, cusine_type):
-        """ basic info about reasturnat"""
-        self.name = restaurant_name
-        self.type = cusine_type
-        self.number_served = 0
+# 9.5 (Login Attemps)
 
-    def describe_reasturant(self):
-        """ Function that decribe reasturant"""
-        print("The name of this special reasturnat is " + self.name.title() + ". And it's a " + self.type + " type of reasturant")
+class User():
 
-    def open_restaurant(self):
-        """ Shows if the restaurant is open or not"""
-        print("The restaurant is open 24/7/365")
+    def __init__(self, first_name, last_name, login_attempts):
+        self.first_name = first_name
+        self.last_name = last_name
+        self.login_attempts = login_attempts
 
-    def set_number(self, number):
-        """let's you set a number of people is being served"""
-        self.number_served = number
-    def increment_number(self, number):
-        if number >= self.number_served:
-            self.number_served += number
-        else:
-            print("Type a bigger number")
+    def describe_user(self):
+        """ Details about the user"""
+        print("My first name is " + self.first_name + " and My last name is " + self.last_name)
 
-restaurant_details = Restaurant("Lesu Mia's Restaurant", "Street food")
-print(restaurant_details.name + " has served about " + str(restaurant_details.number_served) + " People")
-restaurant_details.number_served = 500
-print(restaurant_details.name + " has served about " + str(restaurant_details.number_served) + " People")
+    def greet_user(self):
+        print("Hello Beautiful " + self.first_name + " "+  self.last_name)
+    def increment_login_attempts(self):
+        self.login_attempts += 1
+    def reset_login_attemps(self):
+        self.login_attempts = 0
 
-restaurant_details.set_number(9)
-print(restaurant_details.name + " has served about " + str(restaurant_details.number_served) + " People")
+user1 = User("Aktar", "Zaman", 5)
+user1.describe_user()
+user1.greet_user()
+user1.increment_login_attempts()
+user1.increment_login_attempts()
+user1.increment_login_attempts()
+user1.increment_login_attempts()
+user1.increment_login_attempts()
+user1.increment_login_attempts()
+user1.increment_login_attempts()
+user1.increment_login_attempts()
+# user1.reset_login_attemps()
 
-restaurant_details.increment_number(499)
-print(restaurant_details.name + " has served about " + str(restaurant_details.number_served) + " People")
+print(user1.login_attempts)

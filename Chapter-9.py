@@ -59,20 +59,20 @@
 # third_instance.describe_reasturant()
 
 # 9.3(Users)
-#
-# class User():
-#
-#     def __init__(self, first_name, last_name):
-#         self.first_name = first_name
-#         self.last_name = last_name
-#
-#     def describe_user(self):
-#         """ Details about the user"""
-#         print("My first name is " + self.first_name + " and My last name is " + self.last_name)
-#
-#     def greet_user(self):
-#         print("Hello Beautiful " + self.first_name + " "+  self.last_name)
-#
+
+class User():
+
+    def __init__(self, first_name, last_name):
+        self.first_name = first_name
+        self.last_name = last_name
+
+    def describe_user(self):
+        """ Details about the user"""
+        print("My first name is " + self.first_name + " and My last name is " + self.last_name)
+
+    def greet_user(self):
+        print("Hello Beautiful " + self.first_name + " "+  self.last_name)
+
 # user1 = User("Aktar", "Zaman")
 # user1.describe_user()
 # user1.greet_user()
@@ -175,38 +175,38 @@ print(restaurant_details.name + " has served about " + str(restaurant_details.nu
 
 # 9.5 (Login Attemps)
 
-class User():
-
-    def __init__(self, first_name, last_name, login_attempts):
-        self.first_name = first_name
-        self.last_name = last_name
-        self.login_attempts = login_attempts
-
-    def describe_user(self):
-        """ Details about the user"""
-        print("My first name is " + self.first_name + " and My last name is " + self.last_name)
-
-    def greet_user(self):
-        print("Hello Beautiful " + self.first_name + " "+  self.last_name)
-    def increment_login_attempts(self):
-        self.login_attempts += 1
-    def reset_login_attemps(self):
-        self.login_attempts = 0
-
-user1 = User("Aktar", "Zaman", 5)
-user1.describe_user()
-user1.greet_user()
-user1.increment_login_attempts()
-user1.increment_login_attempts()
-user1.increment_login_attempts()
-user1.increment_login_attempts()
-user1.increment_login_attempts()
-user1.increment_login_attempts()
-user1.increment_login_attempts()
-user1.increment_login_attempts()
-# user1.reset_login_attemps()
-
-print(user1.login_attempts)
+# class User():
+#
+#     def __init__(self, first_name, last_name, login_attempts):
+#         self.first_name = first_name
+#         self.last_name = last_name
+#         self.login_attempts = login_attempts
+#
+#     def describe_user(self):
+#         """ Details about the user"""
+#         print("My first name is " + self.first_name + " and My last name is " + self.last_name)
+#
+#     def greet_user(self):
+#         print("Hello Beautiful " + self.first_name + " "+  self.last_name)
+#     def increment_login_attempts(self):
+#         self.login_attempts += 1
+#     def reset_login_attemps(self):
+#         self.login_attempts = 0
+#
+# user1 = User("Aktar", "Zaman", 5)
+# user1.describe_user()
+# user1.greet_user()
+# user1.increment_login_attempts()
+# user1.increment_login_attempts()
+# user1.increment_login_attempts()
+# user1.increment_login_attempts()
+# user1.increment_login_attempts()
+# user1.increment_login_attempts()
+# user1.increment_login_attempts()
+# user1.increment_login_attempts()
+# # user1.reset_login_attemps()
+#
+# print(user1.login_attempts)
 
 # Battery class
 
@@ -261,10 +261,71 @@ class IceCreamStand(Restaurant):
     def show_flavors(self):
         print("\n Here's the following type of flavors " + self.name + " has: ")
         for flavor in self.flavors:
-            print(flavor.title())
+            print("- "+flavor.title())
 
 ice_cream_instance = IceCreamStand("Andrew's Ice-Cream")
 ice_cream_instance.flavors = ['vanilla', 'chocolate', 'black cherry']
 
 ice_cream_instance.describe_reasturant()
 ice_cream_instance.show_flavors()
+
+
+# 9.7 ( Admin )
+
+class User():
+    """Represent a simple user profile."""
+
+    def __init__(self, first_name, last_name, username, email, location):
+        """Initialize the user."""
+        self.first_name = first_name.title()
+        self.last_name = last_name.title()
+        self.username = username
+        self.email = email
+        self.location = location.title()
+        self.login_attempts = 0
+
+    def describe_user(self):
+        """Display a summary of the user's information."""
+        print("\n" + self.first_name + " " + self.last_name)
+        print("  Username: " + self.username)
+        print("  Email: " + self.email)
+        print("  Location: " + self.location)
+
+    def greet_user(self):
+        """Display a personalized greeting to the user."""
+        print("\nWelcome back, " + self.username + "!")
+
+    def increment_login_attempts(self):
+        """Increment the value of login_attempts."""
+        self.login_attempts += 1
+
+    def reset_login_attempts(self):
+        """Reset login_attempts to 0."""
+        self.login_attempts = 0
+
+
+class Admin(User):
+    """A user with administrative privileges."""
+
+    def __init__(self, first_name, last_name, username, email, location):
+        """Initialize the admin."""
+        super().__init__(first_name, last_name, username, email, location)
+        self.privileges = []
+
+    def show_privileges(self):
+        """Display the privileges this administrator has."""
+        print("\nPrivileges:")
+        for privilege in self.privileges:
+            print("- " + privilege)
+
+
+eric = Admin('eric', 'matthes', 'e_matthes', 'e_matthes@example.com', 'alaska')
+eric.describe_user()
+
+eric.privileges = [
+    'can reset passwords',
+    'can moderate discussions',
+    'can suspend accounts',
+    ]
+
+eric.show_privileges()

@@ -137,41 +137,41 @@ class Car():
 
 # 9.4 (Number Served)
 
-# class Restaurant():
-#
-#     def __init__(self, restaurant_name, cusine_type):
-#         """ basic info about reasturnat"""
-#         self.name = restaurant_name
-#         self.type = cusine_type
-#         self.number_served = 0
-#
-#     def describe_reasturant(self):
-#         """ Function that decribe reasturant"""
-#         print("The name of this special reasturnat is " + self.name.title() + ". And it's a " + self.type + " type of reasturant")
-#
-#     def open_restaurant(self):
-#         """ Shows if the restaurant is open or not"""
-#         print("The restaurant is open 24/7/365")
-#
-#     def set_number(self, number):
-#         """let's you set a number of people is being served"""
-#         self.number_served = number
-#     def increment_number(self, number):
-#         if number >= self.number_served:
-#             self.number_served += number
-#         else:
-#             print("Type a bigger number")
-#
-# restaurant_details = Restaurant("Lesu Mia's Restaurant", "Street food")
-# print(restaurant_details.name + " has served about " + str(restaurant_details.number_served) + " People")
-# restaurant_details.number_served = 500
-# print(restaurant_details.name + " has served about " + str(restaurant_details.number_served) + " People")
-#
-# restaurant_details.set_number(9)
-# print(restaurant_details.name + " has served about " + str(restaurant_details.number_served) + " People")
-#
-# restaurant_details.increment_number(499)
-# print(restaurant_details.name + " has served about " + str(restaurant_details.number_served) + " People")
+class Restaurant():
+
+    def __init__(self, restaurant_name, cusine_type):
+        """ basic info about reasturnat"""
+        self.name = restaurant_name
+        self.type = cusine_type
+        self.number_served = 0
+
+    def describe_reasturant(self):
+        """ Function that decribe reasturant"""
+        print("The name of this special reasturnat is " + self.name.title() + ". And it's a " + self.type + " type of reasturant")
+
+    def open_restaurant(self):
+        """ Shows if the restaurant is open or not"""
+        print("The restaurant is open 24/7/365")
+
+    def set_number(self, number):
+        """let's you set a number of people is being served"""
+        self.number_served = number
+    def increment_number(self, number):
+        if number >= self.number_served:
+            self.number_served += number
+        else:
+            print("Type a bigger number")
+
+restaurant_details = Restaurant("Lesu Mia's Restaurant", "Street food")
+print(restaurant_details.name + " has served about " + str(restaurant_details.number_served) + " People")
+restaurant_details.number_served = 500
+print(restaurant_details.name + " has served about " + str(restaurant_details.number_served) + " People")
+
+restaurant_details.set_number(9)
+print(restaurant_details.name + " has served about " + str(restaurant_details.number_served) + " People")
+
+restaurant_details.increment_number(499)
+print(restaurant_details.name + " has served about " + str(restaurant_details.number_served) + " People")
 
 # 9.5 (Login Attemps)
 
@@ -251,3 +251,20 @@ my_tesla.battery.get_range()
 
 
 # 9.6 ( Ice Cream Stand )
+
+class IceCreamStand(Restaurant):
+
+    def __init__(self, name, cusine_type="ice_cream"):
+        super().__init__(name, cusine_type="ice_cream")
+        self.flavors = []
+
+    def show_flavors(self):
+        print("\n Here's the following type of flavors " + self.name + " has: ")
+        for flavor in self.flavors:
+            print(flavor.title())
+
+ice_cream_instance = IceCreamStand("Andrew's Ice-Cream")
+ice_cream_instance.flavors = ['vanilla', 'chocolate', 'black cherry']
+
+ice_cream_instance.describe_reasturant()
+ice_cream_instance.show_flavors()

@@ -218,6 +218,17 @@ class Battery():
     def describe_battery(self):
         print("This car has a " + str(self.battery_size) + "-kWh battery.")
 
+    def get_range(self):
+        """Print a statement about the rance this battery provides"""
+        if self.battery_size == 70:
+            range = 240
+        elif self.battery_size == 85:
+            range = 270
+
+        message = "This car can go appropriately "+ str(range)
+        message += " miles on a full change"
+        print(message)
+
 
 
 class ElectricCar(Car):
@@ -226,7 +237,7 @@ class ElectricCar(Car):
     def __init__(self, make, model, year):
         """Initialize attributes of the parent class"""
         super().__init__(make, model, year)
-        self.battery = Battery(600)
+        self.battery = Battery(85)
 
     # def describe_battery(self):
     #     """Print a statement describing the battery size."""
@@ -236,5 +247,7 @@ class ElectricCar(Car):
 my_tesla = ElectricCar("Tesla", "model s", 2016)
 print(my_tesla.get_desctiptive_name())
 my_tesla.battery.describe_battery()
+my_tesla.battery.get_range()
 
-# Start from page 176
+
+# 9.6 ( Ice Cream Stand )

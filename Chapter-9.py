@@ -313,11 +313,11 @@ class Admin(User):
         self.privileges = []
         self.privilege = privileges('can reset passwords',)
 
-    # def show_privileges(self):
-    #     """Display the privileges this administrator has."""
-    #     print("\nPrivileges:")
-    #     for privilege in self.privileges:
-    #         print("- " + privilege)
+    def show_privileges(self):
+        """Display the privileges this administrator has."""
+        print("\nPrivileges:")
+        for privilege in self.privileges:
+            print("- " + privilege)
 
 
 eric = Admin('eric', 'matthes', 'e_matthes', 'e_matthes@example.com', 'alaska')

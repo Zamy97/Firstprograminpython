@@ -116,24 +116,24 @@ class Car():
         else:
             print("Get a life")
 
-# my_new_car = Car('Scion', 'FRS', 2017)
-# print(my_new_car.get_desctiptive_name())
-# my_new_car.read_odometer()
-#
-# my_new_car.odometer_reading = 45
-# # my_new_car.read_odometer()
-#
-# my_new_car.update_odometer(65)
+my_new_car = Car('Scion', 'FRS', 2017)
+print(my_new_car.get_desctiptive_name())
+my_new_car.read_odometer()
+
+my_new_car.odometer_reading = 45
 # my_new_car.read_odometer()
 
-# my_used_car = Car("Subaru", "sports", 2013)
-# print(my_used_car.get_desctiptive_name())
-#
-# my_used_car.update_odometer(17800)
-# my_used_car.read_odometer()
-#
-# my_used_car.increment_odometer(-20000)
-# my_used_car.read_odometer()
+my_new_car.update_odometer(65)
+my_new_car.read_odometer()
+
+my_used_car = Car("Subaru", "sports", 2013)
+print(my_used_car.get_desctiptive_name())
+
+my_used_car.update_odometer(17800)
+my_used_car.read_odometer()
+
+my_used_car.increment_odometer(-20000)
+my_used_car.read_odometer()
 
 # 9.4 (Number Served)
 

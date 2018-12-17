@@ -27,36 +27,36 @@
 
 # 9.1 ( Reasturant)
 
-# class Restaurant():
-#
-#     def __init__(self, restaurant_name, cusine_type):
-#         """ basic info about reasturnat"""
-#         self.name = restaurant_name
-#         self.type = cusine_type
-#
-#     def describe_reasturant(self):
-#         """ Function that decribe reasturant"""
-#         print("The name of this special reasturnat is " + self.name.title() + ". And it's a " + self.type + " type of reasturant")
-#
-#     def open_restaurant(self):
-#         """ Shows if the restaurant is open or not"""
-#         print("The restaurant is open 24/7/365")
-#
-# restaurant_details = Restaurant("Lesu Mia's Restaurant", "Street food")
-# print("MY favorite restaurant is " + restaurant_details.name.title())
-# print("It a " + restaurant_details.type.title() + " type of restaurant")
-# restaurant_details.describe_reasturant()
-# restaurant_details.open_restaurant()
+class Restaurant():
 
-# 9.2 (Three Restaurant)
-# first_instance = Restaurant("Aangan", "South East Asian Food")
-# first_instance.describe_reasturant()
-#
-# second_instance = Restaurant("In n out", "Fast ")
-# second_instance.describe_reasturant()
-#
-# third_instance = Restaurant("Somethign", "something")
-# third_instance.describe_reasturant()
+    def __init__(self, restaurant_name, cusine_type):
+        """ basic info about reasturnat"""
+        self.name = restaurant_name
+        self.type = cusine_type
+
+    def describe_reasturant(self):
+        """ Function that decribe reasturant"""
+        print("The name of this special reasturnat is " + self.name.title() + ". And it's a " + self.type + " type of reasturant")
+
+    def open_restaurant(self):
+        """ Shows if the restaurant is open or not"""
+        print("The restaurant is open 24/7/365")
+
+restaurant_details = Restaurant("Lesu Mia's Restaurant", "Street food")
+print("MY favorite restaurant is " + restaurant_details.name.title())
+print("It a " + restaurant_details.type.title() + " type of restaurant")
+restaurant_details.describe_reasturant()
+restaurant_details.open_restaurant()
+
+9.2 (Three Restaurant)
+first_instance = Restaurant("Aangan", "South East Asian Food")
+first_instance.describe_reasturant()
+
+second_instance = Restaurant("In n out", "Fast ")
+second_instance.describe_reasturant()
+
+third_instance = Restaurant("Somethign", "something")
+third_instance.describe_reasturant()
 
 # 9.3(Users)
 

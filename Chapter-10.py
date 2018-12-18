@@ -144,7 +144,7 @@
 #     else:
 #         print(answer)
 
-## 10.6 (Addition)
+## 10.6 (Addition) and 10.7
 print("Let's do some basic math")
 while True:
     first_number = input("\nWhat is the first number that you want: ")
@@ -161,3 +161,5 @@ while True:
         print("Please type in a number")
     else:
         print(addition_result)
+
+    ## 10.8 (Cats and Dogs)

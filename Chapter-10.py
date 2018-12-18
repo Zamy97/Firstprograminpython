@@ -145,21 +145,33 @@
 #         print(answer)
 
 ## 10.6 (Addition) and 10.7
-print("Let's do some basic math")
-while True:
-    first_number = input("\nWhat is the first number that you want: ")
-    if first_number == 'q':
-        break
-
-    second_number = input("What is the second number that you want: ")
-    if second_number == 'q':
-        break
-
-    try:
-        addition_result = int(first_number) / int(second_number)
-    except ValueError:
-        print("Please type in a number")
-    else:
-        print(addition_result)
+# print("Let's do some basic math")
+# while True:
+#     first_number = input("\nWhat is the first number that you want: ")
+#     if first_number == 'q':
+#         break
+#
+#     second_number = input("What is the second number that you want: ")
+#     if second_number == 'q':
+#         break
+#
+#     try:
+#         addition_result = int(first_number) / int(second_number)
+#     except ValueError:
+#         print("Please type in a number")
+#     else:
+#         print(addition_result)
 
     ## 10.8 (Cats and Dogs)
+
+filename = 'cats_and_dogs_name.txt'
+
+with open(filename, 'w') as file_object:
+
+    file_object.write("\n Mini")
+    file_object.write("\n Spot")
+    file_object.write("\n Sniper")
+
+with open(filename) as file_object:
+    stuff = file_object.read()
+    print(stuff)

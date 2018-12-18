@@ -80,36 +80,65 @@
 #     file_object.write("And also make some good money uk wt m sayinn.\n")
 
 ## 10.3 (Guest)
-user_name = input("What is your name bro??")
 
-with open('names.txt','a') as file_object:
-    file_object.write(user_name + "\n")
+# user_name = input("What is your name bro??")
+#
+# with open('names.txt','a') as file_object:
+#     file_object.write(user_name + "\n")
 
 ## 10.4 (Guest Book)
-filename = 'names.txt'
 
-print("Enter 'quit' when you are finished.")
-while True:
-    name = input("\nWhat's your name? ")
-    if name == 'quit':
-        break
-    else:
-        with open(filename, 'a') as f:
-            f.write(name + "\n")
-        print("Hi " + name + ", you've been added to the guest book.")
+# filename = 'names.txt'
+#
+# print("Enter 'quit' when you are finished.")
+# while True:
+#     name = input("\nWhat's your name? ")
+#     if name == 'quit':
+#         break
+#     else:
+#         with open(filename, 'a') as f:
+#             f.write(name + "\n")
+#         print("Hi " + name + ", you've been added to the guest book.")
 
 ## 10.5 (Programming Poll)
-filename = 'programming_poll.txt'
 
-responses = []
+# filename = 'programming_poll.txt'
+#
+# responses = []
+# while True:
+#     response = input("\nWhy do you like programming? ")
+#     responses.append(response)
+#
+#     continue_poll = input("Would you like to let someone else respond? (y/n) ")
+#     if continue_poll != 'y':
+#         break
+#
+# with open(filename, 'a') as f:
+#     for response in responses:
+#         f.write(response + "\n")
+
+## try Catch Block
+## Handling ZeroDivisionError error
+
+# try:
+#     print(6/0)
+# except ZeroDivisionError:
+#     print("You can't divide a number by 0")
+
+## Simple Calculator
+print("Give me two numbers")
+print("Enter q to quit")
+
 while True:
-    response = input("\nWhy do you like programming? ")
-    responses.append(response)
-
-    continue_poll = input("Would you like to let someone else respond? (y/n) ")
-    if continue_poll != 'y':
+    first_number = input("\nFirst Number: ")
+    if first_number == 'q':
         break
-
-with open(filename, 'a') as f:
-    for response in responses:
-        f.write(response + "\n")
+    second_number = input("\nSecond Number: ")
+    if second_number == 'q':
+        break
+    try:
+        answer = int(first_number) / int(second_number)
+    except ZeroDivisionError:
+        print("Cmo'n now you can't divide a number by 0")
+    else:
+        print(answer)

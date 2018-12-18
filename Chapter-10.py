@@ -1,3 +1,4 @@
+import json
 ## reading from a file
 
 # with open('text_files/pi_digits.txt')as file_object:
@@ -183,4 +184,34 @@ except FileNotFoundError:
 
 with open('summary.text') as file_object:
     content = file_object.read()
-    print(content.count('once'))
+    print(content.lower().count('once'))
+
+
+## How to store json stuff in a file
+numbers = [1,2,3,4,5,7,8]
+#
+file_name = 'number.json'
+with open(file_name, 'w') as file_object:
+    json.dump(numbers, file_object)
+
+with open(file_name) as file_object:
+    numbers = json.load(file_object)
+print(numbers)
+
+import json
+def greet_user():
+    """Greet the user by name."""
+       filename = 'username.json'
+       try:
+           with open(filename) as f_obj:
+               username = json.load(f_obj)
+       except FileNotFoundError:
+           username = input("What is your name? ")
+           with open(filename, 'w') as f_obj:
+               json.dump(username, f_obj)
+               print("We'll remember you when you come back, " + username + "!")
+       else:
+           print("Welcome back, " + username + "!")
+   greet_user()
+
+   ## Read Storing section again

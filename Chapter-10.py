@@ -176,4 +176,5 @@ try:
         stuff = file_object.read()
         print(stuff)
 except FileNotFoundError:
-    print("Please make sure the file exist first")
+    pass
+    # print("Please make sure the file exist first")

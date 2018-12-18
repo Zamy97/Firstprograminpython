@@ -178,3 +178,9 @@ try:
 except FileNotFoundError:
     pass
     # print("Please make sure the file exist first")
+
+## 10.10 (Common Words)
+
+with open('summary.text') as file_object:
+    content = file_object.read()
+    print(content.count('once'))

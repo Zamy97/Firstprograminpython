@@ -47,11 +47,12 @@ print(len(pi_string))
 
 
 # 10.1 (Learning Python)
-with open('summary.text') as file_name:
-    summary = file_name.read()
-    print(summary)
-    print(summary)
-    print(summary)
+
+# with open('summary.text') as file_name:
+#     summary = file_name.read()
+#     print(summary)
+#     print(summary)
+#     print(summary)
 
 with open('summary.text') as file_name:
     lines = file_name.readlines()
@@ -62,4 +63,6 @@ with open('summary.text') as file_name:
 pi_string = ''
 for line  in lines:
     pi_string += line.strip()
+print(pi_string)
+pi_string.replace('Open', 'Fariha')
 print(pi_string)

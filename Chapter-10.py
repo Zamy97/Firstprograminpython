@@ -24,26 +24,26 @@
 
 # Making a list of lines from a file
 
-filename = 'text_files/pi_digits.txt'
-
-with open(filename) as file_object:
-    lines = file_object.readlines()
+# filename = 'text_files/pi_digits.txt'
+#
+# with open(filename) as file_object:
+#     lines = file_object.readlines()
 
 # for line in lines:
 #     print(line.strip())
 
-pi_string = ''
-for line  in lines:
-    pi_string += line.strip()
-
-birthday = input("Enter your birthday, in the form mmddyy: ")
-if birthday in pi_string:
-    print("Your birthday appears in the few digits of pi that I have collected!")
-else:
-    print("Your birthday does not appear in the first million digits of pi.")
-
-print(pi_string[:])
-print(len(pi_string))
+# pi_string = ''
+# for line  in lines:
+#     pi_string += line.strip()
+#
+# birthday = input("Enter your birthday, in the form mmddyy: ")
+# if birthday in pi_string:
+#     print("Your birthday appears in the few digits of pi that I have collected!")
+# else:
+#     print("Your birthday does not appear in the first million digits of pi.")
+#
+# print(pi_string[:])
+# print(len(pi_string))
 
 
 # 10.1 (Learning Python)
@@ -54,15 +54,46 @@ print(len(pi_string))
 #     print(summary)
 #     print(summary)
 
-with open('summary.text') as file_name:
-    lines = file_name.readlines()
+# with open('summary.text') as file_name:
+#     lines = file_name.readlines()
 
 # for line in lines:
 #     print(line)
 
-pi_string = ''
-for line  in lines:
-    pi_string += line.strip()
-print(pi_string)
-pi_string.replace('Open', 'Fariha')
-print(pi_string)
+# pi_string = ''
+# for line  in lines:
+#     pi_string += line.strip()
+# print(pi_string)
+# pi_string.replace('Open', 'Fariha')
+# print(pi_string)
+
+#
+# file_name = 'programming.text'
+#
+# with open(file_name, 'w') as file_object:
+#     file_object.write("Goal is to work at Google.\n")
+#     file_object.write("I am going to make is happen Inshallah.\n")
+#
+#
+# with open(file_name, 'a') as file_object:
+#     file_object.write("Because I can solve problems when I work at Google.\n")
+#     file_object.write("And also make some good money uk wt m sayinn.\n")
+
+## 10.3 (Guest)
+user_name = input("What is your name bro??")
+
+with open('names.txt','a') as file_object:
+    file_object.write(user_name + "\n")
+
+## 10.4 (Guest Book)
+filename = 'names.txt'
+
+print("Enter 'quit' when you are finished.")
+while True:
+    name = input("\nWhat's your name? ")
+    if name == 'quit':
+        break
+    else:
+        with open(filename, 'a') as f:
+            f.write(name + "\n")
+        print("Hi " + name + ", you've been added to the guest book.")

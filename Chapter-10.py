@@ -171,7 +171,9 @@ with open(filename, 'w') as file_object:
     file_object.write("\n Mini")
     file_object.write("\n Spot")
     file_object.write("\n Sniper")
-
-with open(filename) as file_object:
-    stuff = file_object.read()
-    print(stuff)
+try:
+    with open(filename) as file_object:
+        stuff = file_object.read()
+        print(stuff)
+except FileNotFoundError:
+    print("Please make sure the file exist first")

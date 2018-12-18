@@ -126,19 +126,38 @@
 #     print("You can't divide a number by 0")
 
 ## Simple Calculator
-print("Give me two numbers")
-print("Enter q to quit")
 
+# print("Give me two numbers")
+# print("Enter q to quit")
+#
+# while True:
+#     first_number = input("\nFirst Number: ")
+#     if first_number == 'q':
+#         break
+#     second_number = input("\nSecond Number: ")
+#     if second_number == 'q':
+#         break
+#     try:
+#         answer = int(first_number) / int(second_number)
+#     except ZeroDivisionError:
+#         print("Cmo'n now you can't divide a number by 0")
+#     else:
+#         print(answer)
+
+## 10.6 (Addition)
+print("Let's do some basic math")
 while True:
-    first_number = input("\nFirst Number: ")
+    first_number = input("\nWhat is the first number that you want: ")
     if first_number == 'q':
         break
-    second_number = input("\nSecond Number: ")
+
+    second_number = input("What is the second number that you want: ")
     if second_number == 'q':
         break
+
     try:
-        answer = int(first_number) / int(second_number)
-    except ZeroDivisionError:
-        print("Cmo'n now you can't divide a number by 0")
+        addition_result = int(first_number) / int(second_number)
+    except ValueError:
+        print("Please type in a number")
     else:
-        print(answer)
+        print(addition_result)
